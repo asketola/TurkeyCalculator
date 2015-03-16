@@ -13,6 +13,7 @@
 		79B4929E1A37DBA100B24A58 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79B4929D1A37DBA100B24A58 /* Images.xcassets */; };
 		79B492A11A37DBA100B24A58 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B4929F1A37DBA100B24A58 /* LaunchScreen.xib */; };
 		79B492AD1A37DBA100B24A58 /* Turkey_Calculator_3000Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B492AC1A37DBA100B24A58 /* Turkey_Calculator_3000Tests.swift */; };
+		79D4B60E1AB796F90002E242 /* wild_turkey_full_2208.png in Resources */ = {isa = PBXBuildFile; fileRef = 79D4B60D1AB796F90002E242 /* wild_turkey_full_2208.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		79B492A61A37DBA100B24A58 /* Turkey Calculator 3000Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Turkey Calculator 3000Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79B492AB1A37DBA100B24A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79B492AC1A37DBA100B24A58 /* Turkey_Calculator_3000Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Turkey_Calculator_3000Tests.swift; sourceTree = "<group>"; };
+		79D4B60D1AB796F90002E242 /* wild_turkey_full_2208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wild_turkey_full_2208.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				79B492961A37DBA100B24A58 /* AppDelegate.swift */,
 				79B492981A37DBA100B24A58 /* ViewController.swift */,
 				79B4929A1A37DBA100B24A58 /* Main.storyboard */,
+				79D4B60D1AB796F90002E242 /* wild_turkey_full_2208.png */,
 				79B4929D1A37DBA100B24A58 /* Images.xcassets */,
 				79B4929F1A37DBA100B24A58 /* LaunchScreen.xib */,
 				79B492941A37DBA100B24A58 /* Supporting Files */,
@@ -192,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79D4B60E1AB796F90002E242 /* wild_turkey_full_2208.png in Resources */,
 				79B4929C1A37DBA100B24A58 /* Main.storyboard in Resources */,
 				79B492A11A37DBA100B24A58 /* LaunchScreen.xib in Resources */,
 				79B4929E1A37DBA100B24A58 /* Images.xcassets in Resources */,
@@ -407,6 +411,7 @@
 				79B492B21A37DBA100B24A58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79B492B31A37DBA100B24A58 /* Build configuration list for PBXNativeTarget "Turkey Calculator 3000Tests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +420,7 @@
 				79B492B51A37DBA100B24A58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
