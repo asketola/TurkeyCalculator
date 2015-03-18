@@ -9,11 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var numberOfPeopleTextField: UITextField!
     @IBOutlet weak var turkeySizeText: UILabel!
     @IBOutlet weak var thawTimeText: UILabel!
     @IBOutlet weak var cookTimeText: UILabel!
-
+    @IBOutlet weak var numberOfGuestsSlideBar: UISlider!
+    @IBOutlet weak var numberOfGuestsSliderLabel: UILabel!
+    
+    @IBOutlet weak var totalCookPrepDayLabel: UILabel!
+    @IBOutlet weak var totalCookPrepHourLabel: UILabel!
+    @IBOutlet weak var totalCookPrepMinLabel: UILabel!
+   
+    @IBAction func sliderValueChanged(sender: UISlider) {
+        var currentValue = Int(sender.value)
+        numberOfGuestsSliderLabel.text = "\(currentValue)"
+    }
     
     func calcLbsPerPerson(lbsPerPerson: Double,_ people: Double) -> Double {
         return lbsPerPerson * people
@@ -37,7 +46,8 @@ class ViewController: UIViewController {
     }
     @IBAction func calculateButtonPressed(sender: AnyObject) {
         let lbsPerPerson = 1.5
-        var people = NSString(string:numberOfPeopleTextField.text).doubleValue
+//        var people = NSString(string:numberOfPeopleTextField.text).doubleValue
+        var people = NSString(string:numberOfGuestsSliderLabel.text!).doubleValue
         var lbsTurkey = calcLbsPerPerson(lbsPerPerson, people)
         
         let hoursInDay = 24.0
@@ -50,10 +60,25 @@ class ViewController: UIViewController {
         var cookTimeHoursDbl = Double(cookTimeHoursInt)
         var cookTimeMinutes = timeToCookTurkeyMin(cookTimeHours,cookTimeHoursDbl)
         var cookTimeMinutesInt = Int(cookTimeMinutes)
-            
+        
+        var totalCookPrepTime = thawTimeInt + cookTimeHoursInt
+        var totalCookPrepTimeDays = totalCookPrepTime/24
+//        if totalCookPrepTimeDays == 0 {
+             var totalCookPrepTimeHours = totalCookPrepTime
+//        } else {
+//           totalCookPrepTimeHours = totalCookPrepTimeDays - 24
+//        }
+//        
+        
+        // Update Labels
         turkeySizeText.text = "\(lbsTurkey) lbs"
         thawTimeText.text = "\(thawTimeInt) hours"
         cookTimeText.text = "\(cookTimeHoursInt):\(cookTimeMinutesInt) hours"
+        
+        totalCookPrepDayLabel.text = "\(totalCookPrepTimeDays)"
+        totalCookPrepHourLabel.text = "\(totalCookPrepTimeHours)"
+        totalCookPrepMinLabel.text = "minutes"
+        
     }
 
     override func didReceiveMemoryWarning() {
