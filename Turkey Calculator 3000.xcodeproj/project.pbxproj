@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7929598D1ABB76AB00EA4108 /* SizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7929598C1ABB76AB00EA4108 /* SizeViewController.swift */; };
+		7929598F1ABB7FAE00EA4108 /* TurkeyTypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7929598E1ABB7FAE00EA4108 /* TurkeyTypeTableViewController.swift */; };
+		792959911ABB82D300EA4108 /* TurkeyTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792959901ABB82D300EA4108 /* TurkeyTypeTableViewCell.swift */; };
+		792959931ABB8A6A00EA4108 /* TurkeyTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792959921ABB8A6A00EA4108 /* TurkeyTypes.swift */; };
 		79B492971A37DBA100B24A58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B492961A37DBA100B24A58 /* AppDelegate.swift */; };
 		79B492991A37DBA100B24A58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B492981A37DBA100B24A58 /* ViewController.swift */; };
 		79B4929C1A37DBA100B24A58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B4929A1A37DBA100B24A58 /* Main.storyboard */; };
@@ -27,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7929598C1ABB76AB00EA4108 /* SizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeViewController.swift; sourceTree = "<group>"; };
+		7929598E1ABB7FAE00EA4108 /* TurkeyTypeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurkeyTypeTableViewController.swift; sourceTree = "<group>"; };
+		792959901ABB82D300EA4108 /* TurkeyTypeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurkeyTypeTableViewCell.swift; sourceTree = "<group>"; };
+		792959921ABB8A6A00EA4108 /* TurkeyTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurkeyTypes.swift; sourceTree = "<group>"; };
 		79B492911A37DBA100B24A58 /* Turkey Calculator 3000.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Turkey Calculator 3000.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79B492951A37DBA100B24A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79B492961A37DBA100B24A58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +90,10 @@
 				79B492961A37DBA100B24A58 /* AppDelegate.swift */,
 				79B492981A37DBA100B24A58 /* ViewController.swift */,
 				79B4929A1A37DBA100B24A58 /* Main.storyboard */,
+				792959901ABB82D300EA4108 /* TurkeyTypeTableViewCell.swift */,
+				7929598E1ABB7FAE00EA4108 /* TurkeyTypeTableViewController.swift */,
+				792959921ABB8A6A00EA4108 /* TurkeyTypes.swift */,
+				7929598C1ABB76AB00EA4108 /* SizeViewController.swift */,
 				79D4B60D1AB796F90002E242 /* wild_turkey_full_2208.png */,
 				79B4929D1A37DBA100B24A58 /* Images.xcassets */,
 				79B4929F1A37DBA100B24A58 /* LaunchScreen.xib */,
@@ -217,7 +229,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				79B492991A37DBA100B24A58 /* ViewController.swift in Sources */,
+				7929598D1ABB76AB00EA4108 /* SizeViewController.swift in Sources */,
+				792959911ABB82D300EA4108 /* TurkeyTypeTableViewCell.swift in Sources */,
+				792959931ABB8A6A00EA4108 /* TurkeyTypes.swift in Sources */,
 				79B492971A37DBA100B24A58 /* AppDelegate.swift in Sources */,
+				7929598F1ABB7FAE00EA4108 /* TurkeyTypeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

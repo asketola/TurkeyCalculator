@@ -74,10 +74,10 @@ class ViewController: UIViewController {
         turkeySizeText.text = "\(lbsTurkey) lbs"
         thawTimeText.text = "\(thawTimeInt) hours"
         cookTimeText.text = "\(cookTimeHoursInt):\(cookTimeMinutesInt) hours"
-        
+      
         totalCookPrepDayLabel.text = "\(totalCookPrepTimeDays)"
         totalCookPrepHourLabel.text = "\(totalCookPrepTimeHours)"
-        totalCookPrepMinLabel.text = "minutes"
+        totalCookPrepMinLabel.text = "5"
         
     }
 
