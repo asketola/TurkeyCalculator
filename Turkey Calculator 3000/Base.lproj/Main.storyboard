@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ufi-Z1-ZiF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ufi-Z1-ZiF">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -46,34 +46,93 @@
             </objects>
             <point key="canvasLocation" x="646" y="-901"/>
         </scene>
-        <!--Turkey Type Table View Controller-->
-        <scene sceneID="TAk-hk-LF0">
+        <!--Turkey Collection2 View Controller-->
+        <scene sceneID="FyT-Pw-mxP">
             <objects>
-                <tableViewController storyboardIdentifier="Types of Turkeys" id="wsA-u4-EPh" customClass="TurkeyTypeTableViewController" customModule="Turkey_Calculator_3000" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Abi-Gz-Bfe">
+                <viewController id="ZDM-3i-w7W" customClass="TurkeyCollection2ViewController" customModule="Turkey_Calculator_3000" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TAM-KX-i9c"/>
+                        <viewControllerLayoutGuide type="bottom" id="8io-eZ-8I7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nhz-IR-sfd">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TurkeyType" id="X2w-JH-1Pq" customClass="TurkeyTypeTableViewCell" customModule="Turkey_Calculator_3000" customModuleProvider="target">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="X2w-JH-1Pq" id="z6I-3O-OV7">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Types of Turkeys" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoe-6A-3gl">
+                                <rect key="frame" x="236" y="72" width="128" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="c22-Xj-uzV">
+                                <rect key="frame" x="0.0" y="101" width="600" height="499"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OIC-iI-aPw">
+                                    <size key="itemSize" width="126" height="140"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="53V-xc-WcJ" customClass="TurkeyCell" customModule="Turkey_Calculator_3000" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="126" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JYY-7N-O6k">
+                                                    <rect key="frame" x="0.0" y="0.0" width="126" height="111"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6X-bE-C0U">
+                                                    <rect key="frame" x="8" y="119" width="110" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="d6X-bE-C0U" firstAttribute="leading" secondItem="53V-xc-WcJ" secondAttribute="leadingMargin" id="7TR-jW-8YV"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="d6X-bE-C0U" secondAttribute="bottom" constant="-8" id="EuE-KM-No4"/>
+                                            <constraint firstItem="JYY-7N-O6k" firstAttribute="top" secondItem="53V-xc-WcJ" secondAttribute="topMargin" constant="-8" id="UtA-87-tQD"/>
+                                            <constraint firstItem="d6X-bE-C0U" firstAttribute="top" secondItem="JYY-7N-O6k" secondAttribute="bottom" constant="8" id="fPo-Qd-2ad"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="JYY-7N-O6k" secondAttribute="trailing" constant="-8" id="fyP-Kv-ZQV"/>
+                                            <constraint firstItem="d6X-bE-C0U" firstAttribute="trailing" secondItem="53V-xc-WcJ" secondAttribute="trailingMargin" id="juW-9W-vMh"/>
+                                            <constraint firstItem="JYY-7N-O6k" firstAttribute="leading" secondItem="53V-xc-WcJ" secondAttribute="leadingMargin" constant="-8" id="zF1-e3-cw8"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="turkeyImage" destination="JYY-7N-O6k" id="ARX-zc-SGz"/>
+                                            <outlet property="turkeyLabel" destination="d6X-bE-C0U" id="mLA-od-382"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
                                 <connections>
-                                    <segue destination="epP-tv-oLq" kind="show" id="4Tl-Me-zoI"/>
+                                    <outlet property="dataSource" destination="ZDM-3i-w7W" id="eUZ-gX-gFa"/>
+                                    <outlet property="delegate" destination="ZDM-3i-w7W" id="Hml-oV-2Pi"/>
                                 </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="wsA-u4-EPh" id="YNV-aJ-Cfb"/>
-                            <outlet property="delegate" destination="wsA-u4-EPh" id="Oll-Lt-XKZ"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jGb-Xb-Z20" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="c22-Xj-uzV" secondAttribute="trailing" constant="-16" id="4Pz-m6-812"/>
+                            <constraint firstItem="zoe-6A-3gl" firstAttribute="top" secondItem="TAM-KX-i9c" secondAttribute="bottom" constant="8" id="CbL-3j-CjM"/>
+                            <constraint firstItem="c22-Xj-uzV" firstAttribute="top" secondItem="Nhz-IR-sfd" secondAttribute="topMargin" constant="20" id="KEN-RH-9Mu"/>
+                            <constraint firstItem="c22-Xj-uzV" firstAttribute="leading" secondItem="Nhz-IR-sfd" secondAttribute="leadingMargin" constant="-16" id="Wsf-lv-AuK"/>
+                            <constraint firstAttribute="centerX" secondItem="zoe-6A-3gl" secondAttribute="centerX" id="aX9-30-5nn"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="c22-Xj-uzV" secondAttribute="bottom" id="lBp-Vg-P3i"/>
+                            <constraint firstItem="c22-Xj-uzV" firstAttribute="top" secondItem="zoe-6A-3gl" secondAttribute="bottom" constant="8" id="qJp-pQ-qs2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="KEN-RH-9Mu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v7p-zL-RWL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="627" y="-223"/>
+            <point key="canvasLocation" x="652" y="-223"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -268,10 +327,10 @@
             </objects>
             <point key="canvasLocation" x="627" y="437"/>
         </scene>
-        <!--View Controller-->
+        <!--Prep View Controller-->
         <scene sceneID="iuh-fb-gMO">
             <objects>
-                <viewController id="DCl-9P-csT" sceneMemberID="viewController">
+                <viewController id="DCl-9P-csT" customClass="PrepViewController" customModule="Turkey_Calculator_3000" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rU0-rA-NMk"/>
                         <viewControllerLayoutGuide type="bottom" id="xcJ-gG-giF"/>
@@ -280,29 +339,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prep your Bird" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5v-tr-MaJ">
-                                <rect key="frame" x="16" y="72" width="111" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Defrosting" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5v-tr-MaJ">
+                                <rect key="frame" x="261" y="72" width="79" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uhL-0P-9vd">
-                                <rect key="frame" x="16" y="101" width="568" height="885"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozR-Zg-JpT">
+                                <rect key="frame" x="16" y="101" width="568" height="61"/>
+                                <string key="text">If you bought a frozen turkey, as most people do, you will need to defrost it. This means preparing the star course for the big day a few days ahead of time.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="AtS-gT-O9h">
+                                <rect key="frame" x="0.0" y="170" width="600" height="435"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">DefrostingFirst of all, if you've bought a frozen turkey, you'll need to defrost it. This works best if you plan ahead—it may be tempting to leave the turkey out on the counter overnight, but this is exactly what the invasive bacteria in your kitchen are hoping you'll do. Not a good idea. Instead, use one of these methods:Defrost in the refrigerator: According to the U.S.D.A., this is the safest choice. There's no chance of harmful bacteria growing, and a bird defrosted in the fridge can be safely re-frozen if plans change.Pros: There's practically no effort involved: Just leave the turkey in its original wrapper and place it in a shallow pan to catch any leaks.Cons: This method is time-consuming, and the turkey can hog valuable fridge space during a hectic season. Allow 24 hours for every four to five pounds. (A 13- to 16-pound turkey would take three days.)                                                                                       Defrost in a cold-water bath: If you're short on time or fridge space, this is your best option. You'll only need about 30 minutes per pound of turkey, so a 13- to 16-pound bird will be ready to go in six to eight hours.     Pros: Much faster, and leaves your fridge free for other holiday preparations.Cons: This method is labor-intensive. First, make sure the wrapper is water tight, with no tears or thin spots in the plastic. (You don't want the water to soak into the bird itself, and you don't want any bacteria to leak out of the bird and into the water.) Submerge the turkey in cold water in a basin or sink, and check with a thermometer to be sure the water is 40°F or colder. As the bird thaws, drain and replace the water every 30 minutes, always checking to be sure it remains below 40°F. (If you live in a cold climate, placing the basin outside will help keep it cool.) When you're done, be sure to scrub the sink or basin thoroughly to remove any bacteria.                                                          All About GibletsAfter defrosting (or first, if your turkey is fresh), the next step is to remove the bag of giblets from inside the cavity. Giblets are the turkey's edible organs (usually the heart, liver, and gizzard), plus the neck. They're safe to eat (and delicious), and can be simmered in stock or water to add flavor to basting liquid, stuffing, or gravy. If you forget to remove them before roasting, take them out as soon as you remember. If the bag is paper, they're still fine to use, but if it's plastic, you can only use them if there are no signs of damage—if the bag has melted or become singed, you should unfortunately discard both the giblets and the bird, as chemicals from the heated plastic may have leached into the meat.Extra feathersBefore you rinse your bird, take a look at the skin: Organic turkeys, heritage breeds, and kosher birds may still have some quills (broken-off feathers) embedded. If you want a smooth, unbroken surface that will brown up evenly, use a clean pair of tweezers or needle nose pliers to pluck any stray quills.WashingFinally, rinse the outside of the turkey and inside the cavity with cool water and pat dry. As a precaution against the spread of harmful bacteria, be sure to wash the sink, countertop, and any utensils that have come in contact with the uncooked meat, as well as your own hands, with soap and water.</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ih6-oG-vOm">
+                                    <size key="itemSize" width="119" height="116"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell2" id="z7m-nT-m73" customClass="PrepCell" customModule="Turkey_Calculator_3000" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="119" height="116"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kD0-gU-bCg">
+                                                    <rect key="frame" x="8" y="95" width="103" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JFQ-bF-xJG">
+                                                    <rect key="frame" x="0.0" y="0.0" width="119" height="87"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="prepImage" destination="JFQ-bF-xJG" id="XEb-TA-lwl"/>
+                                            <outlet property="prepLabel" destination="kD0-gU-bCg" id="und-xp-Cza"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="DCl-9P-csT" id="FFw-CA-Sfs"/>
+                                    <outlet property="delegate" destination="DCl-9P-csT" id="Som-Xk-TsW"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xcJ-gG-giF" firstAttribute="top" secondItem="uhL-0P-9vd" secondAttribute="bottom" constant="8" id="5iP-LE-uxS"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="AtS-gT-O9h" secondAttribute="bottom" constant="-5" id="6Ik-A2-thS"/>
                             <constraint firstItem="p5v-tr-MaJ" firstAttribute="top" secondItem="rU0-rA-NMk" secondAttribute="bottom" constant="8" id="9lv-97-ut7"/>
-                            <constraint firstItem="uhL-0P-9vd" firstAttribute="trailing" secondItem="j3T-jZ-1AN" secondAttribute="trailingMargin" id="SgF-s7-Ybv"/>
-                            <constraint firstItem="uhL-0P-9vd" firstAttribute="top" secondItem="p5v-tr-MaJ" secondAttribute="bottom" constant="8" id="V94-EI-AAC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ozR-Zg-JpT" secondAttribute="trailing" id="gl1-JW-GGc"/>
+                            <constraint firstItem="AtS-gT-O9h" firstAttribute="leading" secondItem="j3T-jZ-1AN" secondAttribute="leadingMargin" constant="-16" id="h1x-ze-H77"/>
                             <constraint firstItem="p5v-tr-MaJ" firstAttribute="leading" secondItem="j3T-jZ-1AN" secondAttribute="leadingMargin" id="h8X-6P-rJQ"/>
-                            <constraint firstItem="uhL-0P-9vd" firstAttribute="leading" secondItem="j3T-jZ-1AN" secondAttribute="leadingMargin" id="nrY-kO-j0r"/>
+                            <constraint firstAttribute="centerX" secondItem="p5v-tr-MaJ" secondAttribute="centerX" constant="-0.5" id="hOI-mh-z1u"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AtS-gT-O9h" secondAttribute="trailing" constant="-16" id="mDQ-Al-Joq"/>
+                            <constraint firstItem="AtS-gT-O9h" firstAttribute="top" secondItem="ozR-Zg-JpT" secondAttribute="bottom" constant="8" id="u4a-by-ihY"/>
+                            <constraint firstItem="ozR-Zg-JpT" firstAttribute="leading" secondItem="j3T-jZ-1AN" secondAttribute="leadingMargin" id="vLS-kM-y68"/>
+                            <constraint firstItem="ozR-Zg-JpT" firstAttribute="top" secondItem="p5v-tr-MaJ" secondAttribute="bottom" constant="8" id="xXR-VO-qme"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="h8X-6P-rJQ"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FyS-ti-cre" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -330,7 +437,24 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Lm-7x-gvj">
                                 <rect key="frame" x="16" y="101" width="568" height="383"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Size MattersThe general rule for turkey buying is one pound per person—one-and-a-half if you want lots of leftovers. The list below gives more specific weight ranges. People to lbs of turkey.8 people12-14 pounds10 people15-16 pounds12 people18-20 pounds14 people21-22 pounds16 people24 pounds</string>
+                                <string key="text">Size Matters
+The general rule for turkey buying is one pound per person—one-and-a-half if you want lots of leftovers. The list below gives more specific weight ranges. People to lbs of turkey.
+
+8 people
+12-14 pounds
+
+10 people
+15-16 pounds
+
+12 people
+18-20 pounds
+
+14 people
+21-22 pounds
+
+16 people
+24 pounds
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -411,7 +535,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="wsA-u4-EPh" kind="show" id="dHH-Ri-7an"/>
+                                            <segue destination="ZDM-3i-w7W" kind="show" id="8NU-Sy-3Cq"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="RT4-Hq-0tv">
@@ -534,10 +658,10 @@
             </objects>
             <point key="canvasLocation" x="-41" y="436"/>
         </scene>
-        <!--View Controller-->
+        <!--Stuffing View Controller-->
         <scene sceneID="Ydh-Wj-vaR">
             <objects>
-                <viewController id="myG-wI-BTb" sceneMemberID="viewController">
+                <viewController id="myG-wI-BTb" customClass="StuffingViewController" customModule="Turkey_Calculator_3000" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oiu-h7-Dd7"/>
                         <viewControllerLayoutGuide type="bottom" id="VH8-Bh-Vh9"/>
@@ -547,38 +671,86 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stuffing your bird" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qup-Pk-jxW">
-                                <rect key="frame" x="16" y="72" width="132" height="21"/>
+                                <rect key="frame" x="234" y="72" width="132" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DIe-K6-Mfh">
-                                <rect key="frame" x="16" y="101" width="568" height="2255"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Stuffing: Pros and ConsMany cooks choose not to stuff their birds. There are two reasons for this:1. Safety: Stuffing is an optimal environment for the growth of dangerous bacteria. To prevent this, a number of cautionary steps must be taken.2. Even Cooking: Some people believe that placing stuffing in the cavity makes it more difficult for the meat to cook evenly, resulting in some parts being overcooked by the time the rest is done.Roasting Without StuffingIf you choose to roast your turkey unstuffed, you can cook the stuffing on the side in a casserole dish. Add some stock to replace the turkey juices it would have absorbed in the cavity. You can also sauté the turkey liver, gizzard, and neck in butter, cut up (shredding the neck meat off the bone) and add them for more flavor. This will make the stuffing nearly as rich as if it had been baked in the turkey itself (though don't forget to make a meatless version if you've got any vegetarians on the guest list).Not stuffing your turkey also means there's room in the cavity for aromatics, which will season the bird and add complexity to the pan drippings used to make gravy. Try placing onion quarters, celery stalks, parsley, thyme, salt, and pepper in the turkey before roasting.Roasting with StuffingLuckily, for those who love nothing more than the flavor of turkey fat and drippings seeping into the stuffing as it cooks, there are ways to get around the food safety and cooking issues. Here's how:1. To prevent bacteria growth, don't make your stuffing ahead. It's okay to make the components of the stuffing ahead of time, but be sure they're kept refrigerated, and that wet and dry ingredients are kept separate (meaning don't mix in the eggs until the last minute). And be sure that any meat or seafood ingredients, such as shellfish or turkey giblets, are fully cooked before mixing them in.2. Just before roasting, assemble the stuffing and gently pack it in the body and neck cavities. Be sure not to overstuff—stuffing, especially if you're using rice or bread crumbs, will expand as it cooks.3. Using an instant-read thermometer, take the temperature of the stuffing as it cooks. To ensure that any bacteria are killed, the stuffing must be cooked until a thermometer inserted into the middle reads 165°F. However, be sure to take the temperature of the meat as well it's likely that the meat will reach 165°F before the stuffing does. If this happens, don't leave the bird in the oven while the stuffing catches up—this will result in dried-out meat. Instead, take the turkey out of the oven to rest, transfer the stuffing to a casserole dish, and put it back in the oven (or microwave it) until it reaches the proper temperature.Oven Temperature and Cooking TimeFood safety regulations mandate an oven temperature no lower than 325°F. But, given these parameters, there are still a lot of ways to roast a bird. You can cook it low and slow, at 325°F for hours and hours until it's done. You can blast it with high heat at the beginning or end of cooking to give it color and crisp the skin, and reduce the cooking time. You can leave the bird breast side up the whole time, or turn it over halfway through. They're all great methods, and only trial and error will determine which is best for you. As long as the bird reaches the correct temperature, feel free to experiment.BastingTraditional recipes call for basting the turkey every half hour, to moisten and flavor the bird. Basting is a simple process that just requires opening the oven and spooning (or using a turkey baster to squirt) the pan juices all over the turkey. You can add butter to the roasting pan for a richer basting solution, or have turkey broth simmering on the stove to use if the pan juices run dry. Basting will certainly help the skin brown up nicely, but opinions vary on whether the liquid actually penetrates the skin to moisten the flesh. And remember: The open oven door will allow heat to escape, lowering the interior temperature and lengthening the roasting time. For these reasons, today's cooking trends favor moistening methods that don't require basting, such as brining the turkey before roasting, stuffing butter under the skin, or roasting the turkey breast side down (flipping halfway through cooking to get an even brown) so it self bastes.Alternately, you can split the difference by treating the bird with a brine and/or butter mix before cooking, then basting it every once in a while—say on the hour instead of every 30 minutes—as it roasts.How Do I Know When My Turkey's Done?To kill all bacteria, a turkey must be cooked to an internal temperature of 165°F. According to the U.S.D.A., the bird must reach this temperature before you take it out of the oven. As it rests, the temperature will then continue to rise to around 180°F. For juicier meat, however, some people prefer to take the bird out at 150°F so the temperature will rise only to 165°F as it rests. This is less of a risk if you get an organic or heritage bird, which is less likely to contain harmful bacteria.Whichever temperature you choose, be sure to use a meat thermometer to determine it. In the past, people used to use the color of the meat as an indication of doneness: The turkey was pierced with a knife, and if the juices were clear instead of pink, it was done. But this is not a reliable method, for several reasons. First, pinkness can disappear before a safe temperature is reached. And on the flip side, some turkeys (especially organic and heritage birds) may never lose their pink color, even if they're cooked to well above 165°F.To check the temperature, you can use either an instant read thermometer (which you insert after cooking, as it gives a reading immediately) or a remote thermometer (the type that has a probe that you insert before cooking, which connects to a digital display that sits on your counter). See our Thanksgiving equipment guide for more information on meat thermometers. Either way, insert the probe into the thickest part of the turkey's thigh, being careful not to touch the bone (which will skew the reading). The thigh is the best place to test because it takes the longest to cook, but to be on the safe side, it's smart to also take the turkey's temperature underneath the wing.If you find the skin is getting too dark and the desired internal temperature hasn't been reached, loosely tent the browned parts with a double-thick layer of buttered aluminum foil to protect them from the heat.The chart below gives approximate roasting times for an unstuffed turkey to meet the U.S.D.A.-mandated 165°F. A stuffed bird will take approximately half an hour longer. Basting will lengthen the cooking time as well.Roasting Heritage TurkeysWith longer legs, a leaner breast, and a more diminutive size compared to a standard supermarket turkey, heritage birds look, taste, and roast up differently than your average Thanksgiving fowl. Heritage birds generally top out at 14 to 16 pounds, so if you plan on serving a larger crowd, you might want to roast two side by side. An added bonus is that smaller birds cook more quickly than their fleshy cousins, so you don't need to rise at dawn if you like to eat Thanksgiving dinner at noon.Because of their more natural, active lifestyle, heritage turkeys must be roasted differently in order to avoid toughness. Opinions vary on how to achieve this: Some farmers recommend cooking the birds at a higher temperature (425°F to 450°F) for a shorter period of time (no more than 2 hours for a 12- to 14-pound bird). Other people swear by the opposite, roasting their birds more slowly and at a lower temperature than the standard (325°F, 3 1/2 to 4 hours for a 12- to 14-pound bird). Both ways will work—the most important thing is not to overcook the meat. You might even consider undercooking—the cleaner, drug-free living conditions of heritage birds make them less likely to be infected with the kind of bacteria that require cooking to a higher temperature, and an internal temperature of 140°F to 150°F will yield moist, juicy, more tender meat. Be aware that this could leave the meat with a pinkish hue that may be unappealing to some diners, but a quick fix is to toss their pieces under the broiler for a minute or two if they complain.A curious difference between a heritage and regular bird concerns the neck fat. While heritage breeds are typically leaner, many have more neck fat than the Broad Breasted White. If you decide to stuff your heritage turkey before roasting, don't put the stuffing all the way up into the neck cavity. The excess fat will render into the stuffing, making it soggy and greasy. Instead, stuff vegetables like carrots or onions into the neck cavity. The vegetables and fat will add flavor to the extra drippings, ideal for gravy making.Letting the Turkey RestWhen the turkey has reached the desired temperature, it's essential to let it rest for at least 20 minutes before carving. This gives the juices time to settle into the bird and be reabsorbed; carving it up too soon will just allow the moisture to run out, leaving you with dried-out meat on top of a puddle on your carving board. If the breast and thighs have reached a temperature of 165°F, it is not necessary to cover the turkey with aluminum foil while it rests. However, if you've taken the bird out at 150°F or you want to hold it for longer, tent it with foil after 20 minutes to make sure it doesn't cool down too much. Tented with foil, you can leave the bird in a warm place for up to 40 minutes, which gives you plenty of time to make the gravy.</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VrU-0R-Pbp">
+                                <rect key="frame" x="16" y="101" width="568" height="224"/>
+                                <string key="text">Stuffing: Pros and ConsPro-stuffing outside1.	Fear of bacteria from the stuffing and potential uneven cooking of the bird2.	Stuffing the bird instead with onions, celery, herbs and aromatics to enhance the meat’s flavor3.	Vegetarian stuffingPro-stuffing inside1.	Richer flavored stuffing by absorbing the turkey fats and drippings by the stuffing while the bird cooks</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CXG-QY-lhK">
+                                <rect key="frame" x="0.0" y="333" width="600" height="267"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Hsv-a4-tTs">
+                                    <size key="itemSize" width="167" height="148"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell4" id="dD9-ia-fFP" customClass="StuffingCell" customModule="Turkey_Calculator_3000" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="167" height="148"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fN8-jS-ul0">
+                                                    <rect key="frame" x="8" y="119" width="151" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rVK-4P-gCB">
+                                                    <rect key="frame" x="0.0" y="0.0" width="167" height="111"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="stuffingImage" destination="rVK-4P-gCB" id="gNK-61-d5y"/>
+                                            <outlet property="stuffingLabel" destination="fN8-jS-ul0" id="liz-Xb-xIJ"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="myG-wI-BTb" id="5mN-mp-yXd"/>
+                                    <outlet property="delegate" destination="myG-wI-BTb" id="fOY-rD-90v"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="CXG-QY-lhK" secondAttribute="trailing" constant="-16" id="6jE-mz-8gD"/>
                             <constraint firstItem="Qup-Pk-jxW" firstAttribute="top" secondItem="oiu-h7-Dd7" secondAttribute="bottom" constant="8" id="E2M-gK-bbD"/>
                             <constraint firstItem="Qup-Pk-jxW" firstAttribute="leading" secondItem="5WN-2p-x1N" secondAttribute="leadingMargin" id="EiO-B2-mRa"/>
-                            <constraint firstItem="DIe-K6-Mfh" firstAttribute="leading" secondItem="5WN-2p-x1N" secondAttribute="leadingMargin" id="QLy-vh-W0f"/>
-                            <constraint firstItem="DIe-K6-Mfh" firstAttribute="top" secondItem="Qup-Pk-jxW" secondAttribute="bottom" constant="8" id="Ycf-vY-zts"/>
-                            <constraint firstItem="DIe-K6-Mfh" firstAttribute="trailing" secondItem="5WN-2p-x1N" secondAttribute="trailingMargin" id="szH-eg-qUw"/>
-                            <constraint firstItem="VH8-Bh-Vh9" firstAttribute="top" secondItem="DIe-K6-Mfh" secondAttribute="bottom" constant="8" id="xJv-AY-lOC"/>
+                            <constraint firstAttribute="centerX" secondItem="Qup-Pk-jxW" secondAttribute="centerX" id="Iez-cE-FPf"/>
+                            <constraint firstItem="VrU-0R-Pbp" firstAttribute="leading" secondItem="5WN-2p-x1N" secondAttribute="leadingMargin" id="MqW-wZ-8sg"/>
+                            <constraint firstItem="CXG-QY-lhK" firstAttribute="top" secondItem="VrU-0R-Pbp" secondAttribute="bottom" constant="8" id="Qcp-Mx-Ebo"/>
+                            <constraint firstItem="VrU-0R-Pbp" firstAttribute="trailing" secondItem="5WN-2p-x1N" secondAttribute="trailingMargin" id="UBx-pe-fnr"/>
+                            <constraint firstItem="VrU-0R-Pbp" firstAttribute="top" secondItem="Qup-Pk-jxW" secondAttribute="bottom" constant="8" id="aLJ-BB-kOd"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="CXG-QY-lhK" secondAttribute="bottom" id="oHj-t7-7DI"/>
+                            <constraint firstItem="CXG-QY-lhK" firstAttribute="leading" secondItem="5WN-2p-x1N" secondAttribute="leadingMargin" constant="-16" id="qhb-1C-WsN"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="EiO-B2-mRa"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VFS-Yk-Jma" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-424" y="1087"/>
         </scene>
-        <!--View Controller-->
+        <!--Flavor View Controller-->
         <scene sceneID="Mc9-ge-a1K">
             <objects>
-                <viewController id="No2-4u-T3M" sceneMemberID="viewController">
+                <viewController id="No2-4u-T3M" customClass="FlavorViewController" customModule="Turkey_Calculator_3000" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BVK-OB-GV7"/>
                         <viewControllerLayoutGuide type="bottom" id="XPz-04-6e5"/>
@@ -588,28 +760,67 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flavor your fowl" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3a-51-CMZ">
-                                <rect key="frame" x="16" y="72" width="122" height="21"/>
+                                <rect key="frame" x="239" y="72" width="122" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ris-ws-e7J">
-                                <rect key="frame" x="16" y="101" width="568" height="1921"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Once you've prepped your turkey, you could just put it in the oven as is, but you'd most likely end up with a bird lacking flavor and moisture. Turkey meat in its natural state is not particularly flavorful or moist. Another problem is that white meat cooks more quickly than dark, so by the time the legs and thighs are cooked to the proper temperature, the breast has lost all its juiciness.Julia Child's solution to this conundrum was to cut the bird up before cooking, then roast the dark and white meat separately, taking each from the oven as it finished. But few American families are willing to forego that Norman Rockwell moment of presenting a whole bird to appreciative guests. Instead, here are some other ideas to try:Butter Rubs This is the simplest way to moisten a bird. You can use unsalted butter alone or, to flavor the meat and the pan drippings (which will go into the gravy), mix in herbs, lemon, white wine, or even maple syrup. Coat the entire raw turkey generously, including under the wings and thighs and underneath the bird.If you want, you can also rub the butter mixture underneath the skin, directly onto the meat. This will particularly help with moistening the breast meat, as the butter will penetrate directly into the flesh and insulate it against overcooking. To do this, before you rub butter over the outside of the turkey, gently lift the skin and stuff as much butter as you can manage between it and the flesh. You may have to break through a fine membrane that connects the skin to the flesh. When you're done, press the skin back to the flesh and coat the entire turkey on the outside with the same mixture.Flavor Injections This method moistens the meat by injecting a fat directly into it. It's basically the equivalent of the self-basting turkeys you can buy, but instead of a mystery mix of flavorings and preservatives injected so far ahead of cooking that it turns the meat to mush, you're mixing up your own all-natural basting solution and injecting it at home.Poultry injectors, which look like fat, plastic hypodermic needles, are sold at kitchen and home stores for about $10 to $15. Once you've loaded the injector, use it to inject extra-virgin olive oil or butter into the breast and thighs of the turkey just before roasting. Or, for a subtle note of flavor, mix in lemon- or garlic-infused olive oil, walnut or hazelnut oil, white wine, or chicken stock simmered with fresh rosemary and thyme.Brining This method ensures an even distribution of flavor and moisture throughout the meat. It's not complicated—you simply soak your bird for a few hours or overnight in brine (a solution of salt and water) then rinse before roasting. But if your turkey is large, it can be a bit unwieldy to keep it in the solution and safely chilled. Here's a brief rundown of the procedure:First off, never brine kosher meat, as it has already undergone salting. It's also not a good idea to brine a self-basted turkey, which also has salt added.It's best to stick to a specific brine recipe. Different varieties of salt have different volumes. If your recipe calls for 4 cups of kosher salt, don't substitute table salt; your brine will be twice as salty as needed and will yield an inedible bird. However, you can adjust the strength of the brine if you also change the duration of the brining. Many recipes call for two gallons of water to two pounds of salt for a quick (four- to six-hour) soak. If you prefer to brine overnight, decrease the amount of salt by half. You can also add sugar, spices, or aromatics for additional flavor.The safest way to brine is by submerging the turkey, breast side up, in the brining bath, covering it, and leaving it in the refrigerator—placing the turkey and brine in a large nonporous plastic bag makes this especially easy. If you don't have room in the fridge, you can also try brining in a cooler (as long as the turkey can fit, completely covered by the solution, with the lid on). Brining in the sink is another option, covering the basin with plastic wrap. If your turkey is floating and not fully submerged, place a large plate on top to weigh it down.If you can't brine in the refrigerator, you'll have to be vigilant about maintaining the temperature of the solution. Check it with a kitchen thermometer at regular intervals to be sure it doesn't go above 40°F. To keep the solution cold without diluting it, place ice cubes sealed in plastic bags into the brining bath, replacing them once they melt. Or, if you live in a cold climate, place your cooler outside. Check the temperature regularly to make sure it's not too warm or too cold. Temperatures under 26°F may start to freeze the turkey.After brining, rinse the turkey under cold water and pat dry. Discard the brine solution and plastic bags or wrapping after use. Scrub the sink, cooler, or basin with soap and water.Dry herb rubs This method doesn't add moisture, but it does add flavor and texture, and helps spice up the gravy made from the pan drippings. Make a paste using salt, plus herbs and spices such as pepper, rosemary, thyme, paprika, and crushed bay leaves. Just before roasting, rub a generous amount all over the turkey, including under the wings and thighs and on the bottom. Some of the seasoning will be absorbed during roasting, saturating the bird with flavor, but bits will stick to the skin to give a crackling texture.Mixing it up If you're tempted to try several of these techniques and can't decide which one will give you the best-tasting, silkiest-textured bird, feel free to mix and match. For example, you might want to massage herb butter under the skin of a brined bird, or maybe a dry herb and spice rub would taste great and lend a crackling skin to the bird you've just injected with garlic-infused olive oil. The recipes on page one illustrate different ways the various flavor- and moisture-enhancing techniques can be combined.Putting the Turkey in the PanOnce you've flavored your bird, the next step is to arrange it in the pan. First, place a U- or V-shaped roasting rack in the pan. This promotes an even circulation of heat around the meat and prevents the turkey from getting soggy after sitting in the pan juices. See our Thanksgiving equipment guide for more information on roasting pans and racks.The next question: Which side goes up? When your turkey comes to the table, you'll want it breast-side up, with the traditional crispy golden-brown skin. But roasting it this way the entire time dries out the white breast meat. To prevent this, there are two alternatives:1. Place the turkey on the rack with the breast side down. This protects the white meat from overcooking and allows it to absorb the juices as they run downward into the bottom of the pan. Then, for the last hour of roasting, carefully remove the pan from the oven and flip the bird over. Return it to the oven with the breast side up, allowing the breast skin to crisp up and get golden brown.2. If you're worried about flipping a hot and heavy fowl (which can be near-impossible if your bird's more than 16 or 18 pounds), you can roast it breast-side-up the whole time if you take some precautions. Cover the breast with a double-thick layer of buttered aluminum foil or cheesecloth to help insulate it against the heat. Then uncover it an hour before it's done, allowing the skin to darken and crisp. If the skin still looks too pale but the meat is finished, feel free to broil the bird for a minute or two before pulling it out of the oven. (This works best if your broiler unit is attached to the top of your main oven and not in a separate drawer; in the latter case, the bird will only fit if you cut it up into smaller pieces.)Tying the BirdIf you plan on stuffing your bird, now's the time to do it. (See our section on stuffing for more information.) Whether your turkey's stuffed or unstuffed, the last step before roasting is tying. This promotes even cooking. Some turkeys are sold pre-tied, but it's easy to do it at home. Once the turkey is on the rack, use kitchen twine to loosely tie the legs together. Tuck the wings under the shoulders so no part of the turkey juts out and absorbs a greater amount of radiant heat.</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KMg-5I-phb">
+                                <rect key="frame" x="0.0" y="101" width="600" height="499"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gob-0Z-sPc">
+                                    <size key="itemSize" width="123" height="137"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell5" id="T3r-Jx-BrW" customClass="FlavorCell" customModule="Turkey_Calculator_3000" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="123" height="137"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2X5-Rl-Tbp">
+                                                    <rect key="frame" x="0.0" y="0.0" width="123" height="99"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJo-dX-AML">
+                                                    <rect key="frame" x="8" y="108" width="107" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="flavorImage" destination="2X5-Rl-Tbp" id="uNM-KH-EEf"/>
+                                            <outlet property="flavorLabel" destination="EJo-dX-AML" id="h9o-Bu-Adc"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="No2-4u-T3M" id="qIk-CS-GVl"/>
+                                    <outlet property="delegate" destination="No2-4u-T3M" id="DhU-ZE-HUe"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Ris-ws-e7J" firstAttribute="leading" secondItem="1Ph-sB-ljg" secondAttribute="leadingMargin" id="99F-nk-e79"/>
+                            <constraint firstAttribute="centerX" secondItem="T3a-51-CMZ" secondAttribute="centerX" id="1AF-yG-EWa"/>
+                            <constraint firstItem="KMg-5I-phb" firstAttribute="leading" secondItem="1Ph-sB-ljg" secondAttribute="leadingMargin" constant="-16" id="CmX-su-Ap2"/>
                             <constraint firstItem="T3a-51-CMZ" firstAttribute="leading" secondItem="1Ph-sB-ljg" secondAttribute="leadingMargin" id="Ctd-71-n2A"/>
+                            <constraint firstItem="KMg-5I-phb" firstAttribute="top" secondItem="T3a-51-CMZ" secondAttribute="bottom" constant="8" id="CwL-7Q-LPL"/>
                             <constraint firstItem="T3a-51-CMZ" firstAttribute="top" secondItem="BVK-OB-GV7" secondAttribute="bottom" constant="8" id="MuV-8f-qy1"/>
-                            <constraint firstItem="Ris-ws-e7J" firstAttribute="top" secondItem="T3a-51-CMZ" secondAttribute="bottom" constant="8" id="RwC-t1-ikb"/>
-                            <constraint firstItem="Ris-ws-e7J" firstAttribute="trailing" secondItem="1Ph-sB-ljg" secondAttribute="trailingMargin" id="Zev-pa-olT"/>
-                            <constraint firstItem="XPz-04-6e5" firstAttribute="top" secondItem="Ris-ws-e7J" secondAttribute="bottom" constant="8" id="sDq-d1-2rD"/>
+                            <constraint firstItem="XPz-04-6e5" firstAttribute="top" secondItem="KMg-5I-phb" secondAttribute="bottom" id="YNW-yh-M64"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KMg-5I-phb" secondAttribute="trailing" constant="-16" id="xcd-0n-s6T"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ctd-71-n2A"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wTC-ms-M2R" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -634,10 +845,10 @@
             </objects>
             <point key="canvasLocation" x="-853" y="437"/>
         </scene>
-        <!--View Controller-->
+        <!--Gravy View Controller-->
         <scene sceneID="QDH-Aw-hN4">
             <objects>
-                <viewController id="ddV-OB-bKS" sceneMemberID="viewController">
+                <viewController id="ddV-OB-bKS" customClass="GravyViewController" customModule="Turkey_Calculator_3000" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2AN-EI-0d5"/>
                         <viewControllerLayoutGuide type="bottom" id="YtW-uI-QkK"/>
@@ -647,28 +858,67 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gravy and Carving" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwT-RP-GoS">
-                                <rect key="frame" x="16" y="72" width="143" height="21"/>
+                                <rect key="frame" x="229" y="72" width="143" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="deT-fy-MAx">
-                                <rect key="frame" x="16" y="101" width="568" height="1470"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qgZ-bO-LpE">
+                                <rect key="frame" x="0.0" y="101" width="610" height="499"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Making GravyA drizzle of rich, deeply flavored gravy adds moisture and succulence to your Thanksgiving fowl, and can even rescue breast meat that came out slightly drier than you would have liked.For basic pan gravy, once the turkey's done, transfer it to a serving platter or cutting board and let it rest. Meanwhile, remove the rack from the roasting pan and carefully pour the pan juices into a measuring cup or fat separator.Let the juices stand for a few minutes—the fat will separate and rise to the top. If you've used a fat separator, you can simply pour off the juices, leaving the fat behind. If not, spoon or ladle the fat off, reserving both the fat and the juices.Now that you've removed the fat, use the juices to make your gravy base. Set the roasting pan over two stovetop burners and pour the reserved juices back in. (For a richer gravy, you can also add some dry white wine or a sweetly fortified wine such as Madeira or port. You could even sauté the neck, gizzard, and heart from the giblet package, then simmer them in stock, wine, or even water, and add that to the pan juices.) Cook over moderate heat a few minutes, whisking to scrape up those tasty browned bits on the bottom of the pan. This is called deglazing the pan—the browned bits are where a lot of the good gravy flavor comes from, so it's important to incorporate them.Next, add turkey or chicken stock until you have the desired amount of gravy. If you have any on hand, homemade stock is by far the best. A good stock can be the difference between a rich, delicious gravy and a lackluster one. You can use the bones from this year's bird to make stock for next year—simply freeze it in measured portions.Now that you've got your flavorful gravy base, flour needs to be added to thicken it. To do this, the flour is usually combined with fat—this helps it melt evenly into the gravy instead of forming lumps.You have several choices as to what kind of flour–fat mixture to use. The most common is a roux, which makes a particularly robust gravy. To thicken using a roux, pour the fat that you separated from the pan juices into a moderately large saucepan. (If you don't have the amount your recipe calls for, you can add melted butter.) Sprinkle with an equal amount of flour and cook over moderate heat, stirring constantly, until the mixture bubbles and turns brown, about 5 minutes. Gradually whisk in the gravy base and bring it to a boil, then lower the heat and continue cooking until the mixture thickens.Another option is a beurre manie, which is a paste made of flour and butter. In this case you won't use the fat you separated from the pan juices so you can discard it or reserve it for another use. A beurre manie is a bit easier to make, and it gives you more control over how thick the gravy gets as you add it bit by bit to the gravy base. To thicken using a beurre manie, use the back of a fork to mix equal parts softened butter and flour into a smooth paste. (Using an instant flour such as Wondra will help avoid lumps in the finished gravy.) Store the mixture in the refrigerator up to one day. Once your base is simmering in the roasting pan, drop in the beurre manie a teaspoonful at a time, then whisk well until the gravy thickens. If any lumps appear, just strain the gravy through a sieve before serving.CarvingOnce the turkey has rested out of the oven for a minimum of 20 minutes, it's ready for carving. Some cooks like to remove sections of the turkey first (the whole breast, thighs, and legs), then slice up the sections for buffet-style serving. This style of carving allows you to cut the breast diagonally against the grain, which keeps the meat tender. It's also easier, and since you're likely doing it in the kitchen, there's less performance anxiety for the carver.This said, if you want the oohs and aahs and all the glory of carving at the table, here are some tips:Start with the Right Tools:A sharp knife and a two-pronged meat fork are essential to quality carving, and another must is a stable surface, like a sturdy plastic or wooden cutting board, to keep the turkey from slipping while you've got it under the knife. If you have trouble cutting through joints, as when trying to remove the wings, try swapping your knife for kitchen shears.Carve the Easy Parts First:Start by gently pulling the drumstick away from the bird and cut where the thigh is joined to the body. Slice the thigh from the leg and move on to the next drumstick. This will leave you with a smooth carving surface for more-equal slices of breast.Steady Your Bird:You don't want the turkey to slide around as you slice the breast (not good for your carving technique or your fingers). Make a deep horizontal cut above the wing as you pin down the top of the bird with your meat fork. Keep holding it down as you shave off thin slices of breast in an easy downward motion.Leftovers and StorageFor food safety, the U.S.D.A. recommends discarding any leftover turkey, stuffing, or gravy that has been at room temperature for more than two hours. Otherwise, store leftovers in small portions in airtight containers in the fridge. Refrigerated leftover turkey and stuffing will keep for two to three days, gravy for one to two days. Leftovers will keep in the freezer indefinitely, but are best used within two to four months. Cooked turkey is safe to eat either cold or reheated. It doesn't have to be reheated to a specific temperature.If you've saved the carcass and are planning to make stock or soup with it, it's fine to leave it out for more than two hours since you'll be boiling it again to make the broth. But it's still best to get in the fridge as soon as you can. If you're out of fridge space, throw the turkey in a pot as soon as it's carved, cover with water, and let it simmer while you sup. By the time the meal is over and the dishes done, your turkey stock will be, too.</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uzp-4e-AzZ">
+                                    <size key="itemSize" width="314" height="220"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell3" id="32F-Uu-h4K" customClass="GravyCell" customModule="Turkey_Calculator_3000" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="314" height="220"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Mc-GD-prc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="314" height="183"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQV-WR-mfy">
+                                                    <rect key="frame" x="8" y="191" width="298" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="gravyImage" destination="3Mc-GD-prc" id="ary-K9-5IT"/>
+                                            <outlet property="gravyLabel" destination="bQV-WR-mfy" id="oV7-x4-Yo3"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="ddV-OB-bKS" id="Gwh-nr-j7t"/>
+                                    <outlet property="delegate" destination="ddV-OB-bKS" id="Djr-S8-L3q"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="qgZ-bO-LpE" firstAttribute="leading" secondItem="n8h-sO-Xgh" secondAttribute="leadingMargin" constant="-16" id="0XT-bo-UQa"/>
+                            <constraint firstItem="YtW-uI-QkK" firstAttribute="top" secondItem="qgZ-bO-LpE" secondAttribute="bottom" id="AeG-nL-9KZ"/>
+                            <constraint firstItem="qgZ-bO-LpE" firstAttribute="top" secondItem="XwT-RP-GoS" secondAttribute="bottom" constant="8" id="FpK-0a-fl4"/>
                             <constraint firstItem="XwT-RP-GoS" firstAttribute="leading" secondItem="n8h-sO-Xgh" secondAttribute="leadingMargin" id="HA7-m8-FNL"/>
-                            <constraint firstItem="YtW-uI-QkK" firstAttribute="top" secondItem="deT-fy-MAx" secondAttribute="bottom" constant="8" id="MgJ-wv-OSf"/>
                             <constraint firstItem="XwT-RP-GoS" firstAttribute="top" secondItem="2AN-EI-0d5" secondAttribute="bottom" constant="8" id="cYM-bR-ZML"/>
-                            <constraint firstItem="deT-fy-MAx" firstAttribute="leading" secondItem="n8h-sO-Xgh" secondAttribute="leadingMargin" id="eSK-xq-kkL"/>
-                            <constraint firstItem="deT-fy-MAx" firstAttribute="trailing" secondItem="n8h-sO-Xgh" secondAttribute="trailingMargin" id="gZC-K4-r08"/>
-                            <constraint firstItem="deT-fy-MAx" firstAttribute="top" secondItem="XwT-RP-GoS" secondAttribute="bottom" constant="8" id="nwq-6T-Mqw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qgZ-bO-LpE" secondAttribute="trailing" constant="-16" id="nQS-Sn-WR5"/>
+                            <constraint firstAttribute="centerX" secondItem="XwT-RP-GoS" secondAttribute="centerX" constant="-0.5" id="yh4-sT-B2n"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="HA7-m8-FNL"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GUU-Is-YCK" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -8,9 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		7929598D1ABB76AB00EA4108 /* SizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7929598C1ABB76AB00EA4108 /* SizeViewController.swift */; };
-		7929598F1ABB7FAE00EA4108 /* TurkeyTypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7929598E1ABB7FAE00EA4108 /* TurkeyTypeTableViewController.swift */; };
-		792959911ABB82D300EA4108 /* TurkeyTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792959901ABB82D300EA4108 /* TurkeyTypeTableViewCell.swift */; };
 		792959931ABB8A6A00EA4108 /* TurkeyTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792959921ABB8A6A00EA4108 /* TurkeyTypes.swift */; };
+		793C52A61B0D365F0054AD20 /* TurkeyCollection2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C52A51B0D365F0054AD20 /* TurkeyCollection2ViewController.swift */; };
+		793C52A81B0D3D320054AD20 /* PrepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C52A71B0D3D320054AD20 /* PrepViewController.swift */; };
+		793C52AA1B0D3F370054AD20 /* PrepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C52A91B0D3F370054AD20 /* PrepCell.swift */; };
+		793C52AC1B0D467B0054AD20 /* GravyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C52AB1B0D467B0054AD20 /* GravyViewController.swift */; };
+		793C52AE1B0D46970054AD20 /* GravyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C52AD1B0D46970054AD20 /* GravyCell.swift */; };
+		793C52B01B0D49EF0054AD20 /* StuffingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C52AF1B0D49EF0054AD20 /* StuffingCell.swift */; };
+		793C52B21B0D4A1B0054AD20 /* StuffingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C52B11B0D4A1B0054AD20 /* StuffingViewController.swift */; };
+		793C52B41B0D4F090054AD20 /* FlavorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C52B31B0D4F090054AD20 /* FlavorViewController.swift */; };
+		793C52B61B0D4F220054AD20 /* FlavorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C52B51B0D4F220054AD20 /* FlavorCell.swift */; };
+		7965F9361AEB498500A63E82 /* TurkeyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7965F9351AEB498500A63E82 /* TurkeyCell.swift */; };
 		79B492971A37DBA100B24A58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B492961A37DBA100B24A58 /* AppDelegate.swift */; };
 		79B492991A37DBA100B24A58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B492981A37DBA100B24A58 /* ViewController.swift */; };
 		79B4929C1A37DBA100B24A58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B4929A1A37DBA100B24A58 /* Main.storyboard */; };
@@ -32,9 +40,17 @@
 
 /* Begin PBXFileReference section */
 		7929598C1ABB76AB00EA4108 /* SizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeViewController.swift; sourceTree = "<group>"; };
-		7929598E1ABB7FAE00EA4108 /* TurkeyTypeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurkeyTypeTableViewController.swift; sourceTree = "<group>"; };
-		792959901ABB82D300EA4108 /* TurkeyTypeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurkeyTypeTableViewCell.swift; sourceTree = "<group>"; };
 		792959921ABB8A6A00EA4108 /* TurkeyTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurkeyTypes.swift; sourceTree = "<group>"; };
+		793C52A51B0D365F0054AD20 /* TurkeyCollection2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurkeyCollection2ViewController.swift; sourceTree = "<group>"; };
+		793C52A71B0D3D320054AD20 /* PrepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrepViewController.swift; sourceTree = "<group>"; };
+		793C52A91B0D3F370054AD20 /* PrepCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrepCell.swift; sourceTree = "<group>"; };
+		793C52AB1B0D467B0054AD20 /* GravyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GravyViewController.swift; sourceTree = "<group>"; };
+		793C52AD1B0D46970054AD20 /* GravyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GravyCell.swift; sourceTree = "<group>"; };
+		793C52AF1B0D49EF0054AD20 /* StuffingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StuffingCell.swift; sourceTree = "<group>"; };
+		793C52B11B0D4A1B0054AD20 /* StuffingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StuffingViewController.swift; sourceTree = "<group>"; };
+		793C52B31B0D4F090054AD20 /* FlavorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlavorViewController.swift; sourceTree = "<group>"; };
+		793C52B51B0D4F220054AD20 /* FlavorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlavorCell.swift; sourceTree = "<group>"; };
+		7965F9351AEB498500A63E82 /* TurkeyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TurkeyCell.swift; path = ../TurkeyCell.swift; sourceTree = "<group>"; };
 		79B492911A37DBA100B24A58 /* Turkey Calculator 3000.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Turkey Calculator 3000.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79B492951A37DBA100B24A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79B492961A37DBA100B24A58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,11 +103,19 @@
 		79B492931A37DBA100B24A58 /* Turkey Calculator 3000 */ = {
 			isa = PBXGroup;
 			children = (
+				793C52A51B0D365F0054AD20 /* TurkeyCollection2ViewController.swift */,
+				7965F9351AEB498500A63E82 /* TurkeyCell.swift */,
 				79B492961A37DBA100B24A58 /* AppDelegate.swift */,
 				79B492981A37DBA100B24A58 /* ViewController.swift */,
 				79B4929A1A37DBA100B24A58 /* Main.storyboard */,
-				792959901ABB82D300EA4108 /* TurkeyTypeTableViewCell.swift */,
-				7929598E1ABB7FAE00EA4108 /* TurkeyTypeTableViewController.swift */,
+				793C52B31B0D4F090054AD20 /* FlavorViewController.swift */,
+				793C52B51B0D4F220054AD20 /* FlavorCell.swift */,
+				793C52AF1B0D49EF0054AD20 /* StuffingCell.swift */,
+				793C52B11B0D4A1B0054AD20 /* StuffingViewController.swift */,
+				793C52AB1B0D467B0054AD20 /* GravyViewController.swift */,
+				793C52AD1B0D46970054AD20 /* GravyCell.swift */,
+				793C52A91B0D3F370054AD20 /* PrepCell.swift */,
+				793C52A71B0D3D320054AD20 /* PrepViewController.swift */,
 				792959921ABB8A6A00EA4108 /* TurkeyTypes.swift */,
 				7929598C1ABB76AB00EA4108 /* SizeViewController.swift */,
 				79D4B60D1AB796F90002E242 /* wild_turkey_full_2208.png */,
@@ -228,12 +252,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				793C52AA1B0D3F370054AD20 /* PrepCell.swift in Sources */,
+				793C52B61B0D4F220054AD20 /* FlavorCell.swift in Sources */,
+				793C52B41B0D4F090054AD20 /* FlavorViewController.swift in Sources */,
 				79B492991A37DBA100B24A58 /* ViewController.swift in Sources */,
+				793C52A61B0D365F0054AD20 /* TurkeyCollection2ViewController.swift in Sources */,
 				7929598D1ABB76AB00EA4108 /* SizeViewController.swift in Sources */,
-				792959911ABB82D300EA4108 /* TurkeyTypeTableViewCell.swift in Sources */,
+				793C52B21B0D4A1B0054AD20 /* StuffingViewController.swift in Sources */,
+				7965F9361AEB498500A63E82 /* TurkeyCell.swift in Sources */,
+				793C52AE1B0D46970054AD20 /* GravyCell.swift in Sources */,
 				792959931ABB8A6A00EA4108 /* TurkeyTypes.swift in Sources */,
+				793C52B01B0D49EF0054AD20 /* StuffingCell.swift in Sources */,
 				79B492971A37DBA100B24A58 /* AppDelegate.swift in Sources */,
-				7929598F1ABB7FAE00EA4108 /* TurkeyTypeTableViewController.swift in Sources */,
+				793C52A81B0D3D320054AD20 /* PrepViewController.swift in Sources */,
+				793C52AC1B0D467B0054AD20 /* GravyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
