@@ -10,8 +10,12 @@ import UIKit
 
 class StuffingViewController: UIViewController {
   
-  var stuffingLabels = ["Roasting with Stuffing", "Roasting without Stuffing", "Oven Temperature", "Roasting Heritage Birds", "Basting"]
-  var stuffingImages = ["wild_turkey_full_2208.png", "wild_turkey_full_2208.png", "wild_turkey_full_2208.png", "wild_turkey_full_2208.png", "wild_turkey_full_2208.png"]
+  var stuffingLabels = ["Stuff In", "Stuff Out", "Oven Temps", "Heritage Birds", "Basting"]
+  var stuffingImages = ["stuffingin.jpg", "stuffingout.jpg", "oven.jpg", "heritage.jpg", "basting.jpg"]
+  var stuffingTexts = ["1skdjhfslkfhsfh", "2lsdjflsjflsfjsl", "3lskjlsdkfjdslk", "4lskdjfdlksfjsdl", "5lskdfjldskfjdsklj"]
+  var forDetailedInfoLabel = String()
+  var forDetailedInfoImage = UIImage()
+  var forDetailedInfoText = String()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,24 +37,28 @@ class StuffingViewController: UIViewController {
     return cell
   }
   
-  func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
+  func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
     println("Cell: \(indexPath.row) selected")
+    forDetailedInfoLabel = stuffingLabels[indexPath.row]
+    forDetailedInfoImage = UIImage(named: stuffingImages[indexPath.row])!
+    forDetailedInfoText = stuffingTexts[indexPath.row]
+    performSegueWithIdentifier("SHOW_STUFFING", sender: self)
   }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+//        if segue.identifier == "SHOW_STUFFING" {
+            var destinationVC = segue.destinationViewController as! DetailedInfoViewController
+            destinationVC.forDetailedInfoLabel = forDetailedInfoLabel
+            destinationVC.forDetailedInfoImage = forDetailedInfoImage
+            destinationVC.forDetailedInfoText = forDetailedInfoText
+//        }
     }
-    */
+
 
 }

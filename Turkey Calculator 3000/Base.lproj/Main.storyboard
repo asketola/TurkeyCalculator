@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ufi-Z1-ZiF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ufi-Z1-ZiF">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -17,13 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TurkeyLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGS-XJ-pmQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="TurkeyLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGS-XJ-pmQ">
                                 <rect key="frame" x="16" y="72" width="93" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1MI-nl-aIJ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1MI-nl-aIJ">
                                 <rect key="frame" x="16" y="101" width="568" height="491"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -59,13 +60,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Types of Turkeys" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoe-6A-3gl">
-                                <rect key="frame" x="236" y="72" width="128" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="234" y="72" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="c22-Xj-uzV">
-                                <rect key="frame" x="0.0" y="101" width="600" height="499"/>
+                                <rect key="frame" x="16" y="101" width="568" height="499"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OIC-iI-aPw">
                                     <size key="itemSize" width="126" height="140"/>
@@ -104,6 +105,7 @@
                                         <connections>
                                             <outlet property="turkeyImage" destination="JYY-7N-O6k" id="ARX-zc-SGz"/>
                                             <outlet property="turkeyLabel" destination="d6X-bE-C0U" id="mLA-od-382"/>
+                                            <segue destination="jDc-Mo-CRY" kind="show" identifier="SHOW_TURKEY_TYPE" id="riG-f3-pWw"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -115,10 +117,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="c22-Xj-uzV" secondAttribute="trailing" constant="-16" id="4Pz-m6-812"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="c22-Xj-uzV" secondAttribute="trailing" id="4Pz-m6-812"/>
                             <constraint firstItem="zoe-6A-3gl" firstAttribute="top" secondItem="TAM-KX-i9c" secondAttribute="bottom" constant="8" id="CbL-3j-CjM"/>
                             <constraint firstItem="c22-Xj-uzV" firstAttribute="top" secondItem="Nhz-IR-sfd" secondAttribute="topMargin" constant="20" id="KEN-RH-9Mu"/>
-                            <constraint firstItem="c22-Xj-uzV" firstAttribute="leading" secondItem="Nhz-IR-sfd" secondAttribute="leadingMargin" constant="-16" id="Wsf-lv-AuK"/>
+                            <constraint firstItem="c22-Xj-uzV" firstAttribute="leading" secondItem="Nhz-IR-sfd" secondAttribute="leadingMargin" id="Wsf-lv-AuK"/>
                             <constraint firstAttribute="centerX" secondItem="zoe-6A-3gl" secondAttribute="centerX" id="aX9-30-5nn"/>
                             <constraint firstAttribute="bottomMargin" secondItem="c22-Xj-uzV" secondAttribute="bottom" id="lBp-Vg-P3i"/>
                             <constraint firstItem="c22-Xj-uzV" firstAttribute="top" secondItem="zoe-6A-3gl" secondAttribute="bottom" constant="8" id="qJp-pQ-qs2"/>
@@ -327,6 +329,68 @@
             </objects>
             <point key="canvasLocation" x="627" y="437"/>
         </scene>
+        <!--Detailed Info View Controller-->
+        <scene sceneID="h1h-70-zSs">
+            <objects>
+                <viewController storyboardIdentifier="DETAILEDINFOCONTROLLER" id="jDc-Mo-CRY" customClass="DetailedInfoViewController" customModule="Turkey_Calculator_3000" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AkH-OQ-2Qs"/>
+                        <viewControllerLayoutGuide type="bottom" id="NH5-kg-lg9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1rY-Rv-fmO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Czk-AY-ZCh">
+                                <rect key="frame" x="16" y="535" width="568" height="57"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMz-cE-T8Z">
+                                <rect key="frame" x="279" y="72" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wild_turkey_full_2208.png" translatesAutoresizingMaskIntoConstraints="NO" id="bSK-LJ-NoT">
+                                <rect key="frame" x="16" y="101" width="568" height="426"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bSK-LJ-NoT" secondAttribute="height" multiplier="4:3" id="1es-Nc-J63"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fMz-cE-T8Z" firstAttribute="top" secondItem="AkH-OQ-2Qs" secondAttribute="bottom" constant="8" id="2Cd-8r-hzN"/>
+                            <constraint firstItem="Czk-AY-ZCh" firstAttribute="trailing" secondItem="1rY-Rv-fmO" secondAttribute="trailingMargin" id="A2V-kE-NaT"/>
+                            <constraint firstItem="bSK-LJ-NoT" firstAttribute="leading" secondItem="1rY-Rv-fmO" secondAttribute="leadingMargin" id="BYt-RI-W4U"/>
+                            <constraint firstItem="bSK-LJ-NoT" firstAttribute="top" secondItem="fMz-cE-T8Z" secondAttribute="bottom" constant="8" id="COK-lY-JTs"/>
+                            <constraint firstItem="NH5-kg-lg9" firstAttribute="top" secondItem="Czk-AY-ZCh" secondAttribute="bottom" constant="8" id="QFF-kY-6IP"/>
+                            <constraint firstAttribute="centerX" secondItem="fMz-cE-T8Z" secondAttribute="centerX" id="UO1-jN-d1G"/>
+                            <constraint firstAttribute="centerX" secondItem="bSK-LJ-NoT" secondAttribute="centerX" id="amY-Od-whJ"/>
+                            <constraint firstItem="bSK-LJ-NoT" firstAttribute="top" secondItem="AkH-OQ-2Qs" secondAttribute="bottom" constant="16" id="hWf-Cf-xv3"/>
+                            <constraint firstItem="Czk-AY-ZCh" firstAttribute="leading" secondItem="1rY-Rv-fmO" secondAttribute="leadingMargin" id="iey-Dv-Ray"/>
+                            <constraint firstItem="Czk-AY-ZCh" firstAttribute="top" secondItem="bSK-LJ-NoT" secondAttribute="bottom" constant="8" id="jOO-WE-h09"/>
+                            <constraint firstItem="bSK-LJ-NoT" firstAttribute="trailing" secondItem="1rY-Rv-fmO" secondAttribute="trailingMargin" id="wPy-vx-ttm"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hWf-Cf-xv3"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="detailedInfoImage" destination="bSK-LJ-NoT" id="7oQ-o1-9W1"/>
+                        <outlet property="detailedInfoLabel" destination="fMz-cE-T8Z" id="edK-aN-v7P"/>
+                        <outlet property="detailedInfoText" destination="Czk-AY-ZCh" id="OwL-jC-Rtt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gVZ-en-XyP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="934" y="1214"/>
+        </scene>
         <!--Prep View Controller-->
         <scene sceneID="iuh-fb-gMO">
             <objects>
@@ -340,8 +404,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Defrosting" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5v-tr-MaJ">
-                                <rect key="frame" x="261" y="72" width="79" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="260" y="72" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -353,7 +417,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="AtS-gT-O9h">
-                                <rect key="frame" x="0.0" y="170" width="600" height="435"/>
+                                <rect key="frame" x="16" y="170" width="568" height="430"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ih6-oG-vOm">
                                     <size key="itemSize" width="119" height="116"/>
@@ -383,6 +447,7 @@
                                         <connections>
                                             <outlet property="prepImage" destination="JFQ-bF-xJG" id="XEb-TA-lwl"/>
                                             <outlet property="prepLabel" destination="kD0-gU-bCg" id="und-xp-Cza"/>
+                                            <segue destination="jDc-Mo-CRY" kind="show" identifier="SHOW_PREP" id="C4V-QT-oX2"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -394,13 +459,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottomMargin" secondItem="AtS-gT-O9h" secondAttribute="bottom" constant="-5" id="6Ik-A2-thS"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="AtS-gT-O9h" secondAttribute="bottom" id="6Ik-A2-thS"/>
                             <constraint firstItem="p5v-tr-MaJ" firstAttribute="top" secondItem="rU0-rA-NMk" secondAttribute="bottom" constant="8" id="9lv-97-ut7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ozR-Zg-JpT" secondAttribute="trailing" id="gl1-JW-GGc"/>
-                            <constraint firstItem="AtS-gT-O9h" firstAttribute="leading" secondItem="j3T-jZ-1AN" secondAttribute="leadingMargin" constant="-16" id="h1x-ze-H77"/>
+                            <constraint firstItem="AtS-gT-O9h" firstAttribute="leading" secondItem="j3T-jZ-1AN" secondAttribute="leadingMargin" id="h1x-ze-H77"/>
                             <constraint firstItem="p5v-tr-MaJ" firstAttribute="leading" secondItem="j3T-jZ-1AN" secondAttribute="leadingMargin" id="h8X-6P-rJQ"/>
                             <constraint firstAttribute="centerX" secondItem="p5v-tr-MaJ" secondAttribute="centerX" constant="-0.5" id="hOI-mh-z1u"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="AtS-gT-O9h" secondAttribute="trailing" constant="-16" id="mDQ-Al-Joq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AtS-gT-O9h" secondAttribute="trailing" id="mDQ-Al-Joq"/>
                             <constraint firstItem="AtS-gT-O9h" firstAttribute="top" secondItem="ozR-Zg-JpT" secondAttribute="bottom" constant="8" id="u4a-by-ihY"/>
                             <constraint firstItem="ozR-Zg-JpT" firstAttribute="leading" secondItem="j3T-jZ-1AN" secondAttribute="leadingMargin" id="vLS-kM-y68"/>
                             <constraint firstItem="ozR-Zg-JpT" firstAttribute="top" secondItem="p5v-tr-MaJ" secondAttribute="bottom" constant="8" id="xXR-VO-qme"/>
@@ -671,23 +736,44 @@ The general rule for turkey buying is one pound per person—one-and-a-half if y
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stuffing your bird" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qup-Pk-jxW">
-                                <rect key="frame" x="234" y="72" width="132" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="221" y="72" width="159" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VrU-0R-Pbp">
-                                <rect key="frame" x="16" y="101" width="568" height="224"/>
-                                <string key="text">Stuffing: Pros and ConsPro-stuffing outside1.	Fear of bacteria from the stuffing and potential uneven cooking of the bird2.	Stuffing the bird instead with onions, celery, herbs and aromatics to enhance the meat’s flavor3.	Vegetarian stuffingPro-stuffing inside1.	Richer flavored stuffing by absorbing the turkey fats and drippings by the stuffing while the bird cooks</string>
+                                <rect key="frame" x="16" y="130" width="568" height="122"/>
+                                <string key="text">1.	Fear of bacteria from the stuffing and potential uneven cooking of the bird
+2.	Stuffing the bird instead with onions, celery, herbs and aromatics to enhance the meat’s flavor
+3.	Vegetarian stuffing
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Outside the Bird" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAd-i7-wB4">
+                                <rect key="frame" x="236" y="101" width="128" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inside the Bird" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlG-4i-wYr">
+                                <rect key="frame" x="243" y="249" width="114" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhh-f0-DE8">
+                                <rect key="frame" x="16" y="278" width="568" height="41"/>
+                                <string key="text">1.	Richer flavored stuffing by absorbing the turkey fats and drippings by the stuffing while the bird cooks</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CXG-QY-lhK">
-                                <rect key="frame" x="0.0" y="333" width="600" height="267"/>
+                                <rect key="frame" x="16" y="327" width="568" height="273"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Hsv-a4-tTs">
-                                    <size key="itemSize" width="167" height="148"/>
+                                    <size key="itemSize" width="127" height="141"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -697,23 +783,24 @@ The general rule for turkey buying is one pound per person—one-and-a-half if y
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="167" height="148"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="127" height="141"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rVK-4P-gCB">
+                                                    <rect key="frame" x="0.0" y="0.0" width="127" height="104"/>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fN8-jS-ul0">
-                                                    <rect key="frame" x="8" y="119" width="151" height="21"/>
+                                                    <rect key="frame" x="8" y="112" width="111" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rVK-4P-gCB">
-                                                    <rect key="frame" x="0.0" y="0.0" width="167" height="111"/>
-                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <connections>
                                             <outlet property="stuffingImage" destination="rVK-4P-gCB" id="gNK-61-d5y"/>
                                             <outlet property="stuffingLabel" destination="fN8-jS-ul0" id="liz-Xb-xIJ"/>
+                                            <segue destination="jDc-Mo-CRY" kind="show" identifier="SHOW_STUFFING" id="LTb-Qn-QFp"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -725,20 +812,29 @@ The general rule for turkey buying is one pound per person—one-and-a-half if y
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="CXG-QY-lhK" secondAttribute="trailing" constant="-16" id="6jE-mz-8gD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Uhh-f0-DE8" secondAttribute="trailing" id="4WA-bp-sQJ"/>
+                            <constraint firstItem="CXG-QY-lhK" firstAttribute="top" secondItem="Uhh-f0-DE8" secondAttribute="bottom" constant="8" id="4sn-TJ-uz8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CXG-QY-lhK" secondAttribute="trailing" id="6jE-mz-8gD"/>
                             <constraint firstItem="Qup-Pk-jxW" firstAttribute="top" secondItem="oiu-h7-Dd7" secondAttribute="bottom" constant="8" id="E2M-gK-bbD"/>
                             <constraint firstItem="Qup-Pk-jxW" firstAttribute="leading" secondItem="5WN-2p-x1N" secondAttribute="leadingMargin" id="EiO-B2-mRa"/>
+                            <constraint firstItem="Qup-Pk-jxW" firstAttribute="centerX" secondItem="EAd-i7-wB4" secondAttribute="centerX" constant="0.5" id="HWx-jg-12A"/>
                             <constraint firstAttribute="centerX" secondItem="Qup-Pk-jxW" secondAttribute="centerX" id="Iez-cE-FPf"/>
+                            <constraint firstItem="Uhh-f0-DE8" firstAttribute="top" secondItem="TlG-4i-wYr" secondAttribute="bottom" constant="8" id="KZV-lL-7vU"/>
                             <constraint firstItem="VrU-0R-Pbp" firstAttribute="leading" secondItem="5WN-2p-x1N" secondAttribute="leadingMargin" id="MqW-wZ-8sg"/>
-                            <constraint firstItem="CXG-QY-lhK" firstAttribute="top" secondItem="VrU-0R-Pbp" secondAttribute="bottom" constant="8" id="Qcp-Mx-Ebo"/>
+                            <constraint firstItem="Uhh-f0-DE8" firstAttribute="leading" secondItem="5WN-2p-x1N" secondAttribute="leadingMargin" id="New-wc-HbT"/>
+                            <constraint firstItem="CXG-QY-lhK" firstAttribute="top" secondItem="VrU-0R-Pbp" secondAttribute="bottom" constant="81" id="Qcp-Mx-Ebo"/>
+                            <constraint firstAttribute="centerX" secondItem="TlG-4i-wYr" secondAttribute="centerX" id="R7u-ES-Urn"/>
                             <constraint firstItem="VrU-0R-Pbp" firstAttribute="trailing" secondItem="5WN-2p-x1N" secondAttribute="trailingMargin" id="UBx-pe-fnr"/>
-                            <constraint firstItem="VrU-0R-Pbp" firstAttribute="top" secondItem="Qup-Pk-jxW" secondAttribute="bottom" constant="8" id="aLJ-BB-kOd"/>
+                            <constraint firstItem="VrU-0R-Pbp" firstAttribute="top" secondItem="Qup-Pk-jxW" secondAttribute="bottom" constant="34" id="aLJ-BB-kOd"/>
+                            <constraint firstItem="EAd-i7-wB4" firstAttribute="top" secondItem="Qup-Pk-jxW" secondAttribute="bottom" constant="5" id="epi-V8-W64"/>
                             <constraint firstAttribute="bottomMargin" secondItem="CXG-QY-lhK" secondAttribute="bottom" id="oHj-t7-7DI"/>
-                            <constraint firstItem="CXG-QY-lhK" firstAttribute="leading" secondItem="5WN-2p-x1N" secondAttribute="leadingMargin" constant="-16" id="qhb-1C-WsN"/>
+                            <constraint firstItem="CXG-QY-lhK" firstAttribute="leading" secondItem="5WN-2p-x1N" secondAttribute="leadingMargin" id="qhb-1C-WsN"/>
+                            <constraint firstItem="TlG-4i-wYr" firstAttribute="top" secondItem="VrU-0R-Pbp" secondAttribute="bottom" constant="-3" id="wIt-ri-WhZ"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="EiO-B2-mRa"/>
+                                <exclude reference="Qcp-Mx-Ebo"/>
                             </mask>
                         </variation>
                     </view>
@@ -760,13 +856,13 @@ The general rule for turkey buying is one pound per person—one-and-a-half if y
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flavor your fowl" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3a-51-CMZ">
-                                <rect key="frame" x="239" y="72" width="122" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="237" y="72" width="126" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KMg-5I-phb">
-                                <rect key="frame" x="0.0" y="101" width="600" height="499"/>
+                                <rect key="frame" x="16" y="101" width="568" height="499"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gob-0Z-sPc">
                                     <size key="itemSize" width="123" height="137"/>
@@ -797,6 +893,7 @@ The general rule for turkey buying is one pound per person—one-and-a-half if y
                                         <connections>
                                             <outlet property="flavorImage" destination="2X5-Rl-Tbp" id="uNM-KH-EEf"/>
                                             <outlet property="flavorLabel" destination="EJo-dX-AML" id="h9o-Bu-Adc"/>
+                                            <segue destination="jDc-Mo-CRY" kind="show" identifier="SHOW_FLAVOR" id="09J-BJ-Bvm"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -809,12 +906,12 @@ The general rule for turkey buying is one pound per person—one-and-a-half if y
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="T3a-51-CMZ" secondAttribute="centerX" id="1AF-yG-EWa"/>
-                            <constraint firstItem="KMg-5I-phb" firstAttribute="leading" secondItem="1Ph-sB-ljg" secondAttribute="leadingMargin" constant="-16" id="CmX-su-Ap2"/>
+                            <constraint firstItem="KMg-5I-phb" firstAttribute="leading" secondItem="1Ph-sB-ljg" secondAttribute="leadingMargin" id="CmX-su-Ap2"/>
                             <constraint firstItem="T3a-51-CMZ" firstAttribute="leading" secondItem="1Ph-sB-ljg" secondAttribute="leadingMargin" id="Ctd-71-n2A"/>
                             <constraint firstItem="KMg-5I-phb" firstAttribute="top" secondItem="T3a-51-CMZ" secondAttribute="bottom" constant="8" id="CwL-7Q-LPL"/>
                             <constraint firstItem="T3a-51-CMZ" firstAttribute="top" secondItem="BVK-OB-GV7" secondAttribute="bottom" constant="8" id="MuV-8f-qy1"/>
                             <constraint firstItem="XPz-04-6e5" firstAttribute="top" secondItem="KMg-5I-phb" secondAttribute="bottom" id="YNW-yh-M64"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="KMg-5I-phb" secondAttribute="trailing" constant="-16" id="xcd-0n-s6T"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KMg-5I-phb" secondAttribute="trailing" id="xcd-0n-s6T"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -858,13 +955,13 @@ The general rule for turkey buying is one pound per person—one-and-a-half if y
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gravy and Carving" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwT-RP-GoS">
-                                <rect key="frame" x="229" y="72" width="143" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="228" y="72" width="146" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qgZ-bO-LpE">
-                                <rect key="frame" x="0.0" y="101" width="610" height="499"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qgZ-bO-LpE">
+                                <rect key="frame" x="16" y="101" width="568" height="499"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uzp-4e-AzZ">
                                     <size key="itemSize" width="314" height="220"/>
@@ -895,6 +992,7 @@ The general rule for turkey buying is one pound per person—one-and-a-half if y
                                         <connections>
                                             <outlet property="gravyImage" destination="3Mc-GD-prc" id="ary-K9-5IT"/>
                                             <outlet property="gravyLabel" destination="bQV-WR-mfy" id="oV7-x4-Yo3"/>
+                                            <segue destination="jDc-Mo-CRY" kind="show" identifier="SHOW_GRAVY" id="Cl8-0G-pOQ"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -906,12 +1004,12 @@ The general rule for turkey buying is one pound per person—one-and-a-half if y
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="qgZ-bO-LpE" firstAttribute="leading" secondItem="n8h-sO-Xgh" secondAttribute="leadingMargin" constant="-16" id="0XT-bo-UQa"/>
+                            <constraint firstItem="qgZ-bO-LpE" firstAttribute="leading" secondItem="n8h-sO-Xgh" secondAttribute="leadingMargin" id="0XT-bo-UQa"/>
                             <constraint firstItem="YtW-uI-QkK" firstAttribute="top" secondItem="qgZ-bO-LpE" secondAttribute="bottom" id="AeG-nL-9KZ"/>
                             <constraint firstItem="qgZ-bO-LpE" firstAttribute="top" secondItem="XwT-RP-GoS" secondAttribute="bottom" constant="8" id="FpK-0a-fl4"/>
                             <constraint firstItem="XwT-RP-GoS" firstAttribute="leading" secondItem="n8h-sO-Xgh" secondAttribute="leadingMargin" id="HA7-m8-FNL"/>
                             <constraint firstItem="XwT-RP-GoS" firstAttribute="top" secondItem="2AN-EI-0d5" secondAttribute="bottom" constant="8" id="cYM-bR-ZML"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="qgZ-bO-LpE" secondAttribute="trailing" constant="-16" id="nQS-Sn-WR5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qgZ-bO-LpE" secondAttribute="trailing" id="nQS-Sn-WR5"/>
                             <constraint firstAttribute="centerX" secondItem="XwT-RP-GoS" secondAttribute="centerX" constant="-0.5" id="yh4-sT-B2n"/>
                         </constraints>
                         <variation key="default">
@@ -926,4 +1024,10 @@ The general rule for turkey buying is one pound per person—one-and-a-half if y
             <point key="canvasLocation" x="-1041" y="1087"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="wild_turkey_full_2208.png" width="2208" height="1462"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="LTb-Qn-QFp"/>
+    </inferredMetricsTieBreakers>
 </document>

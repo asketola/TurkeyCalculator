@@ -10,8 +10,12 @@ import UIKit
 
 class FlavorViewController: UIViewController {
   
-  var flavorLabels = ["Butter Rubs", "Flavor Injections", "Brining", "Dry Herb Rubs", "Pan Layout", "Tying"]
-  var flavorImages = ["wild_turkey_full_2208.png", "wild_turkey_full_2208.png", "wild_turkey_full_2208.png", "wild_turkey_full_2208.png", "wild_turkey_full_2208.png", "wild_turkey_full_2208.png"]
+  var flavorLabels = ["Butter Rubs", "Injections", "Brining", "Dry Herbs", "Pan Layout", "Tying"]
+  var flavorImages = ["butter.jpg", "inject.jpg", "brine.jpg", "herb.jpg", "pan.JPG", "tying.jpg"]
+    var flavorTexts = ["1skdjhfslkfhsfh", "2lsdjflsjflsfjsl", "3lskjlsdkfjdslk", "4lskdjfdlksfjsdl", "5lskdfjldskfjdsklj", "6ljsdlsjdflsdjflksdfj"]
+    var forDetailedInfoLabel = String()
+    var forDetailedInfoImage = UIImage()
+    var forDetailedInfoText = String()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,8 +37,12 @@ class FlavorViewController: UIViewController {
     return cell
   }
   
-  func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
+  func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
     println("Cell: \(indexPath.row) selected")
+    forDetailedInfoLabel = flavorLabels[indexPath.row]
+    forDetailedInfoImage = UIImage(named: flavorImages[indexPath.row])!
+    forDetailedInfoText = flavorTexts[indexPath.row]
+    performSegueWithIdentifier("SHOW_FLAVOR", sender: self)
   }
 
     override func didReceiveMemoryWarning() {
@@ -43,14 +51,13 @@ class FlavorViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "SHOW_FLAVOR" {
+            var destinationVC = segue.destinationViewController as! DetailedInfoViewController
+            destinationVC.forDetailedInfoLabel = forDetailedInfoLabel
+            destinationVC.forDetailedInfoImage = forDetailedInfoImage
+            destinationVC.forDetailedInfoText = forDetailedInfoText
+        }
     }
-    */
 
 }

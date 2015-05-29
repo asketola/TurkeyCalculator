@@ -19,6 +19,32 @@
 		793C52B41B0D4F090054AD20 /* FlavorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C52B31B0D4F090054AD20 /* FlavorViewController.swift */; };
 		793C52B61B0D4F220054AD20 /* FlavorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C52B51B0D4F220054AD20 /* FlavorCell.swift */; };
 		7965F9361AEB498500A63E82 /* TurkeyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7965F9351AEB498500A63E82 /* TurkeyCell.swift */; };
+		7991FAC81B167A2F00A21EB9 /* brine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7991FAB61B167A2E00A21EB9 /* brine.jpg */; };
+		7991FAC91B167A2F00A21EB9 /* butter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7991FAB71B167A2E00A21EB9 /* butter.jpg */; };
+		7991FACA1B167A2F00A21EB9 /* carving.png in Resources */ = {isa = PBXBuildFile; fileRef = 7991FAB81B167A2E00A21EB9 /* carving.png */; };
+		7991FACB1B167A2F00A21EB9 /* counter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7991FAB91B167A2E00A21EB9 /* counter.jpg */; };
+		7991FACC1B167A2F00A21EB9 /* feathers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7991FABA1B167A2F00A21EB9 /* feathers.jpg */; };
+		7991FACD1B167A2F00A21EB9 /* fridge.png in Resources */ = {isa = PBXBuildFile; fileRef = 7991FABB1B167A2F00A21EB9 /* fridge.png */; };
+		7991FACE1B167A2F00A21EB9 /* giblet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7991FABC1B167A2F00A21EB9 /* giblet.jpg */; };
+		7991FACF1B167A2F00A21EB9 /* gravey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7991FABD1B167A2F00A21EB9 /* gravey.jpg */; };
+		7991FAD01B167A2F00A21EB9 /* h2o.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7991FABE1B167A2F00A21EB9 /* h2o.jpeg */; };
+		7991FAD11B167A2F00A21EB9 /* herb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7991FABF1B167A2F00A21EB9 /* herb.jpg */; };
+		7991FAD21B167A2F00A21EB9 /* heritage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7991FAC01B167A2F00A21EB9 /* heritage.jpg */; };
+		7991FAD31B167A2F00A21EB9 /* inject.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7991FAC11B167A2F00A21EB9 /* inject.jpg */; };
+		7991FAD41B167A2F00A21EB9 /* kosher.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7991FAC21B167A2F00A21EB9 /* kosher.jpg */; };
+		7991FAD51B167A2F00A21EB9 /* oven.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7991FAC31B167A2F00A21EB9 /* oven.jpg */; };
+		7991FAD61B167A2F00A21EB9 /* pan.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7991FAC41B167A2F00A21EB9 /* pan.JPG */; };
+		7991FAD71B167A2F00A21EB9 /* stuffingin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7991FAC51B167A2F00A21EB9 /* stuffingin.jpg */; };
+		7991FAD81B167A2F00A21EB9 /* stuffingout.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7991FAC61B167A2F00A21EB9 /* stuffingout.jpg */; };
+		7991FAD91B167A2F00A21EB9 /* tying.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7991FAC71B167A2F00A21EB9 /* tying.jpg */; };
+		7991FADB1B167B4F00A21EB9 /* basting.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7991FADA1B167B4F00A21EB9 /* basting.jpg */; };
+		7991FAE11B167E0300A21EB9 /* heritagebird.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7991FADC1B167E0300A21EB9 /* heritagebird.jpg */; };
+		7991FAE21B167E0300A21EB9 /* kosherturk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7991FADD1B167E0300A21EB9 /* kosherturk.jpg */; };
+		7991FAE31B167E0300A21EB9 /* natural.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7991FADE1B167E0300A21EB9 /* natural.jpg */; };
+		7991FAE41B167E0300A21EB9 /* organic.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7991FADF1B167E0300A21EB9 /* organic.JPG */; };
+		7991FAE51B167E0300A21EB9 /* selfbasting.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7991FAE01B167E0300A21EB9 /* selfbasting.jpg */; };
+		7991FAE71B167E0800A21EB9 /* freerange.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7991FAE61B167E0800A21EB9 /* freerange.jpg */; };
+		7991FAEB1B17910F00A21EB9 /* DetailedInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991FAEA1B17910F00A21EB9 /* DetailedInfoViewController.swift */; };
 		79B492971A37DBA100B24A58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B492961A37DBA100B24A58 /* AppDelegate.swift */; };
 		79B492991A37DBA100B24A58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B492981A37DBA100B24A58 /* ViewController.swift */; };
 		79B4929C1A37DBA100B24A58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B4929A1A37DBA100B24A58 /* Main.storyboard */; };
@@ -51,6 +77,32 @@
 		793C52B31B0D4F090054AD20 /* FlavorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlavorViewController.swift; sourceTree = "<group>"; };
 		793C52B51B0D4F220054AD20 /* FlavorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlavorCell.swift; sourceTree = "<group>"; };
 		7965F9351AEB498500A63E82 /* TurkeyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TurkeyCell.swift; path = ../TurkeyCell.swift; sourceTree = "<group>"; };
+		7991FAB61B167A2E00A21EB9 /* brine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brine.jpg; sourceTree = "<group>"; };
+		7991FAB71B167A2E00A21EB9 /* butter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = butter.jpg; sourceTree = "<group>"; };
+		7991FAB81B167A2E00A21EB9 /* carving.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carving.png; sourceTree = "<group>"; };
+		7991FAB91B167A2E00A21EB9 /* counter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = counter.jpg; sourceTree = "<group>"; };
+		7991FABA1B167A2F00A21EB9 /* feathers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = feathers.jpg; sourceTree = "<group>"; };
+		7991FABB1B167A2F00A21EB9 /* fridge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fridge.png; sourceTree = "<group>"; };
+		7991FABC1B167A2F00A21EB9 /* giblet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = giblet.jpg; sourceTree = "<group>"; };
+		7991FABD1B167A2F00A21EB9 /* gravey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gravey.jpg; sourceTree = "<group>"; };
+		7991FABE1B167A2F00A21EB9 /* h2o.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h2o.jpeg; sourceTree = "<group>"; };
+		7991FABF1B167A2F00A21EB9 /* herb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = herb.jpg; sourceTree = "<group>"; };
+		7991FAC01B167A2F00A21EB9 /* heritage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = heritage.jpg; sourceTree = "<group>"; };
+		7991FAC11B167A2F00A21EB9 /* inject.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inject.jpg; sourceTree = "<group>"; };
+		7991FAC21B167A2F00A21EB9 /* kosher.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kosher.jpg; sourceTree = "<group>"; };
+		7991FAC31B167A2F00A21EB9 /* oven.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = oven.jpg; sourceTree = "<group>"; };
+		7991FAC41B167A2F00A21EB9 /* pan.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pan.JPG; sourceTree = "<group>"; };
+		7991FAC51B167A2F00A21EB9 /* stuffingin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stuffingin.jpg; sourceTree = "<group>"; };
+		7991FAC61B167A2F00A21EB9 /* stuffingout.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stuffingout.jpg; sourceTree = "<group>"; };
+		7991FAC71B167A2F00A21EB9 /* tying.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tying.jpg; sourceTree = "<group>"; };
+		7991FADA1B167B4F00A21EB9 /* basting.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = basting.jpg; sourceTree = "<group>"; };
+		7991FADC1B167E0300A21EB9 /* heritagebird.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = heritagebird.jpg; sourceTree = "<group>"; };
+		7991FADD1B167E0300A21EB9 /* kosherturk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kosherturk.jpg; sourceTree = "<group>"; };
+		7991FADE1B167E0300A21EB9 /* natural.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = natural.jpg; sourceTree = "<group>"; };
+		7991FADF1B167E0300A21EB9 /* organic.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = organic.JPG; sourceTree = "<group>"; };
+		7991FAE01B167E0300A21EB9 /* selfbasting.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = selfbasting.jpg; sourceTree = "<group>"; };
+		7991FAE61B167E0800A21EB9 /* freerange.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = freerange.jpg; sourceTree = "<group>"; };
+		7991FAEA1B17910F00A21EB9 /* DetailedInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailedInfoViewController.swift; path = ../DetailedInfoViewController.swift; sourceTree = "<group>"; };
 		79B492911A37DBA100B24A58 /* Turkey Calculator 3000.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Turkey Calculator 3000.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79B492951A37DBA100B24A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79B492961A37DBA100B24A58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +160,7 @@
 				79B492961A37DBA100B24A58 /* AppDelegate.swift */,
 				79B492981A37DBA100B24A58 /* ViewController.swift */,
 				79B4929A1A37DBA100B24A58 /* Main.storyboard */,
+				7991FAEA1B17910F00A21EB9 /* DetailedInfoViewController.swift */,
 				793C52B31B0D4F090054AD20 /* FlavorViewController.swift */,
 				793C52B51B0D4F220054AD20 /* FlavorCell.swift */,
 				793C52AF1B0D49EF0054AD20 /* StuffingCell.swift */,
@@ -119,6 +172,31 @@
 				792959921ABB8A6A00EA4108 /* TurkeyTypes.swift */,
 				7929598C1ABB76AB00EA4108 /* SizeViewController.swift */,
 				79D4B60D1AB796F90002E242 /* wild_turkey_full_2208.png */,
+				7991FAB61B167A2E00A21EB9 /* brine.jpg */,
+				7991FADA1B167B4F00A21EB9 /* basting.jpg */,
+				7991FAB71B167A2E00A21EB9 /* butter.jpg */,
+				7991FAB81B167A2E00A21EB9 /* carving.png */,
+				7991FAB91B167A2E00A21EB9 /* counter.jpg */,
+				7991FABA1B167A2F00A21EB9 /* feathers.jpg */,
+				7991FABB1B167A2F00A21EB9 /* fridge.png */,
+				7991FABC1B167A2F00A21EB9 /* giblet.jpg */,
+				7991FABD1B167A2F00A21EB9 /* gravey.jpg */,
+				7991FABE1B167A2F00A21EB9 /* h2o.jpeg */,
+				7991FABF1B167A2F00A21EB9 /* herb.jpg */,
+				7991FAC01B167A2F00A21EB9 /* heritage.jpg */,
+				7991FAC11B167A2F00A21EB9 /* inject.jpg */,
+				7991FAC21B167A2F00A21EB9 /* kosher.jpg */,
+				7991FAC31B167A2F00A21EB9 /* oven.jpg */,
+				7991FAC41B167A2F00A21EB9 /* pan.JPG */,
+				7991FAC51B167A2F00A21EB9 /* stuffingin.jpg */,
+				7991FAC61B167A2F00A21EB9 /* stuffingout.jpg */,
+				7991FAC71B167A2F00A21EB9 /* tying.jpg */,
+				7991FADC1B167E0300A21EB9 /* heritagebird.jpg */,
+				7991FADD1B167E0300A21EB9 /* kosherturk.jpg */,
+				7991FADE1B167E0300A21EB9 /* natural.jpg */,
+				7991FADF1B167E0300A21EB9 /* organic.JPG */,
+				7991FAE01B167E0300A21EB9 /* selfbasting.jpg */,
+				7991FAE61B167E0800A21EB9 /* freerange.jpg */,
 				79B4929D1A37DBA100B24A58 /* Images.xcassets */,
 				79B4929F1A37DBA100B24A58 /* LaunchScreen.xib */,
 				79B492941A37DBA100B24A58 /* Supporting Files */,
@@ -231,10 +309,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7991FAD21B167A2F00A21EB9 /* heritage.jpg in Resources */,
+				7991FAE21B167E0300A21EB9 /* kosherturk.jpg in Resources */,
+				7991FAE11B167E0300A21EB9 /* heritagebird.jpg in Resources */,
+				7991FAD11B167A2F00A21EB9 /* herb.jpg in Resources */,
+				7991FAD71B167A2F00A21EB9 /* stuffingin.jpg in Resources */,
+				7991FACD1B167A2F00A21EB9 /* fridge.png in Resources */,
+				7991FADB1B167B4F00A21EB9 /* basting.jpg in Resources */,
+				7991FACE1B167A2F00A21EB9 /* giblet.jpg in Resources */,
+				7991FACC1B167A2F00A21EB9 /* feathers.jpg in Resources */,
+				7991FACF1B167A2F00A21EB9 /* gravey.jpg in Resources */,
+				7991FAD31B167A2F00A21EB9 /* inject.jpg in Resources */,
 				79D4B60E1AB796F90002E242 /* wild_turkey_full_2208.png in Resources */,
+				7991FAE71B167E0800A21EB9 /* freerange.jpg in Resources */,
+				7991FAC91B167A2F00A21EB9 /* butter.jpg in Resources */,
+				7991FACB1B167A2F00A21EB9 /* counter.jpg in Resources */,
+				7991FAD91B167A2F00A21EB9 /* tying.jpg in Resources */,
+				7991FAD81B167A2F00A21EB9 /* stuffingout.jpg in Resources */,
+				7991FAE51B167E0300A21EB9 /* selfbasting.jpg in Resources */,
+				7991FACA1B167A2F00A21EB9 /* carving.png in Resources */,
+				7991FAC81B167A2F00A21EB9 /* brine.jpg in Resources */,
+				7991FAD41B167A2F00A21EB9 /* kosher.jpg in Resources */,
+				7991FAD51B167A2F00A21EB9 /* oven.jpg in Resources */,
 				79B4929C1A37DBA100B24A58 /* Main.storyboard in Resources */,
+				7991FAD01B167A2F00A21EB9 /* h2o.jpeg in Resources */,
 				79B492A11A37DBA100B24A58 /* LaunchScreen.xib in Resources */,
+				7991FAE31B167E0300A21EB9 /* natural.jpg in Resources */,
 				79B4929E1A37DBA100B24A58 /* Images.xcassets in Resources */,
+				7991FAD61B167A2F00A21EB9 /* pan.JPG in Resources */,
+				7991FAE41B167E0300A21EB9 /* organic.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +360,7 @@
 				793C52B41B0D4F090054AD20 /* FlavorViewController.swift in Sources */,
 				79B492991A37DBA100B24A58 /* ViewController.swift in Sources */,
 				793C52A61B0D365F0054AD20 /* TurkeyCollection2ViewController.swift in Sources */,
+				7991FAEB1B17910F00A21EB9 /* DetailedInfoViewController.swift in Sources */,
 				7929598D1ABB76AB00EA4108 /* SizeViewController.swift in Sources */,
 				793C52B21B0D4A1B0054AD20 /* StuffingViewController.swift in Sources */,
 				7965F9361AEB498500A63E82 /* TurkeyCell.swift in Sources */,

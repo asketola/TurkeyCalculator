@@ -11,7 +11,11 @@ import UIKit
 class PrepViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
   
   var prepLabels = ["Refridgerator", "Cold H20", "Counter", "Kosher", "Giblets", "Feathers"]
-  var prepImages = ["wild_turkey_full_2208.png", "wild_turkey_full_2208.png", "wild_turkey_full_2208.png", "wild_turkey_full_2208.png", "wild_turkey_full_2208.png", "wild_turkey_full_2208.png"]
+  var prepImages = ["fridge.png", "h2o.jpeg", "counter.jpg", "kosher.jpg", "giblet.jpg", "feathers.jpg"]
+    var prepTexts = ["1skdjhfslkfhsfh", "2lsdjflsjflsfjsl", "3lskjlsdkfjdslk", "4lskdjfdlksfjsdl", "5lskdfjldskfjdsklj", "6sljdljsdlkfjsldk"]
+    var forDetailedInfoLabel = String()
+    var forDetailedInfoImage = UIImage()
+    var forDetailedInfoText = String()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,8 +37,12 @@ class PrepViewController: UIViewController, UICollectionViewDataSource, UICollec
     return cell
   }
   
-  func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
+  func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
     println("Cell: \(indexPath.row) selected")
+    forDetailedInfoLabel = prepLabels[indexPath.row]
+    forDetailedInfoImage = UIImage(named: prepImages[indexPath.row])!
+    forDetailedInfoText = prepTexts[indexPath.row]
+    performSegueWithIdentifier("SHOW_PREP", sender: self)
   }
 
     override func didReceiveMemoryWarning() {
@@ -43,14 +51,13 @@ class PrepViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "SHOW_PREP" {
+            var destinationVC = segue.destinationViewController as! DetailedInfoViewController
+            destinationVC.forDetailedInfoLabel = forDetailedInfoLabel
+            destinationVC.forDetailedInfoImage = forDetailedInfoImage
+            destinationVC.forDetailedInfoText = forDetailedInfoText
+        }
     }
-    */
 
 }

@@ -11,7 +11,11 @@ import UIKit
 class GravyViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
   
   var gravyLabels = ["Gravy", "Carving"]
-  var gravyImages = ["wild_turkey_full_2208.png", "wild_turkey_full_2208.png"]
+  var gravyImages = ["gravey.jpg", "carving.png"]
+    var gravyTexts = ["1skdjhfslkfhsfh", "2lsdjflsjflsfjsl"]
+    var forDetailedInfoLabel = String()
+    var forDetailedInfoImage = UIImage()
+    var forDetailedInfoText = String()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,8 +37,12 @@ class GravyViewController: UIViewController, UICollectionViewDelegate, UICollect
     return cell
   }
   
-  func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
+  func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
     println("Cell: \(indexPath.row) selected")
+    forDetailedInfoLabel = gravyLabels[indexPath.row]
+    forDetailedInfoImage = UIImage(named: gravyImages[indexPath.row])!
+    forDetailedInfoText = gravyTexts[indexPath.row]
+    performSegueWithIdentifier("SHOW_GRAVY", sender: self)
   }
 
     override func didReceiveMemoryWarning() {
@@ -43,14 +51,13 @@ class GravyViewController: UIViewController, UICollectionViewDelegate, UICollect
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "SHOW_GRAVY" {
+            var destinationVC = segue.destinationViewController as! DetailedInfoViewController
+            destinationVC.forDetailedInfoLabel = forDetailedInfoLabel
+            destinationVC.forDetailedInfoImage = forDetailedInfoImage
+            destinationVC.forDetailedInfoText = forDetailedInfoText
+        }
     }
-    */
 
 }
