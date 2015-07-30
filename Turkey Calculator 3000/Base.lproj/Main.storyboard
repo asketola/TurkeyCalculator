@@ -105,7 +105,6 @@
                                         <connections>
                                             <outlet property="turkeyImage" destination="JYY-7N-O6k" id="ARX-zc-SGz"/>
                                             <outlet property="turkeyLabel" destination="d6X-bE-C0U" id="mLA-od-382"/>
-                                            <segue destination="jDc-Mo-CRY" kind="show" identifier="SHOW_TURKEY_TYPE" id="riG-f3-pWw"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -131,6 +130,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <segue destination="jDc-Mo-CRY" kind="show" identifier="SHOW_TURKEY_TYPE" id="tHx-EX-Ncf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v7p-zL-RWL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -389,7 +391,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gVZ-en-XyP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="934" y="1214"/>
+            <point key="canvasLocation" x="1338" y="-107"/>
         </scene>
         <!--Prep View Controller-->
         <scene sceneID="iuh-fb-gMO">
@@ -447,7 +449,6 @@
                                         <connections>
                                             <outlet property="prepImage" destination="JFQ-bF-xJG" id="XEb-TA-lwl"/>
                                             <outlet property="prepLabel" destination="kD0-gU-bCg" id="und-xp-Cza"/>
-                                            <segue destination="jDc-Mo-CRY" kind="show" identifier="SHOW_PREP" id="C4V-QT-oX2"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -476,6 +477,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <segue destination="jDc-Mo-CRY" kind="show" identifier="SHOW_PREP" id="qup-ro-0gS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FyS-ti-cre" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -800,7 +804,6 @@ The general rule for turkey buying is one pound per person—one-and-a-half if y
                                         <connections>
                                             <outlet property="stuffingImage" destination="rVK-4P-gCB" id="gNK-61-d5y"/>
                                             <outlet property="stuffingLabel" destination="fN8-jS-ul0" id="liz-Xb-xIJ"/>
-                                            <segue destination="jDc-Mo-CRY" kind="show" identifier="SHOW_STUFFING" id="LTb-Qn-QFp"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -838,6 +841,9 @@ The general rule for turkey buying is one pound per person—one-and-a-half if y
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <segue destination="jDc-Mo-CRY" kind="show" identifier="SHOW_STUFFING" id="6uH-fh-WJQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VFS-Yk-Jma" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -893,7 +899,6 @@ The general rule for turkey buying is one pound per person—one-and-a-half if y
                                         <connections>
                                             <outlet property="flavorImage" destination="2X5-Rl-Tbp" id="uNM-KH-EEf"/>
                                             <outlet property="flavorLabel" destination="EJo-dX-AML" id="h9o-Bu-Adc"/>
-                                            <segue destination="jDc-Mo-CRY" kind="show" identifier="SHOW_FLAVOR" id="09J-BJ-Bvm"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -919,6 +924,9 @@ The general rule for turkey buying is one pound per person—one-and-a-half if y
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <segue destination="jDc-Mo-CRY" kind="show" identifier="SHOW_FLAVOR" id="2u7-Zi-HSg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wTC-ms-M2R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -992,7 +1000,6 @@ The general rule for turkey buying is one pound per person—one-and-a-half if y
                                         <connections>
                                             <outlet property="gravyImage" destination="3Mc-GD-prc" id="ary-K9-5IT"/>
                                             <outlet property="gravyLabel" destination="bQV-WR-mfy" id="oV7-x4-Yo3"/>
-                                            <segue destination="jDc-Mo-CRY" kind="show" identifier="SHOW_GRAVY" id="Cl8-0G-pOQ"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -1018,6 +1025,9 @@ The general rule for turkey buying is one pound per person—one-and-a-half if y
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <segue destination="jDc-Mo-CRY" kind="show" identifier="SHOW_GRAVY" id="ZHK-Z8-vzc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GUU-Is-YCK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1028,6 +1038,6 @@ The general rule for turkey buying is one pound per person—one-and-a-half if y
         <image name="wild_turkey_full_2208.png" width="2208" height="1462"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="LTb-Qn-QFp"/>
+        <segue reference="tHx-EX-Ncf"/>
     </inferredMetricsTieBreakers>
 </document>
